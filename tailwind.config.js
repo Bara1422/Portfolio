@@ -20,6 +20,9 @@ export default {
         bgRgb: {
           50: 'rgb(48, 64, 99)'
         }
+      },
+      backgroundImage: {
+        freectionary: "url('/freectionary.png')"
       }
     }
   },

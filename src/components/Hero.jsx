@@ -14,7 +14,7 @@ const Hero = () => {
       className='p-6 flex flex-col md:flex-row md:h-[800px] z-0 justify-center items-center'
       id='home'
     >
-      <div className='p-4 flex  flex-col gap-6 lg:w-2/5'>
+      <div className='p-4 flex order-2 md:order-1 flex-col gap-6 lg:w-2/5'>
         <h1 className='text-5xl lg:text-6xl font-bold text-eden-300'>
           Front-End React Developer.
         </h1>
@@ -63,7 +63,9 @@ const Hero = () => {
         </div>
         <div />
       </div>
-      <BlobImage />
+      <div className='order-1 md:order-2 '>
+        <BlobImage />
+      </div>
     </main>
   )
 }

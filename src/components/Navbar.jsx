@@ -10,6 +10,11 @@ const Navbar = () => {
     }
   }, [window.innerWidth])
 
+  function scrollToComponent(id) {
+    const element = document.getElementById(id)
+    element.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  }
+
   return (
     <nav className='bg-white border-gray-200 dark:bg-[rgb(17,24,40)] sticky top-0 left-0 right-0 '>
       <div className=' max-w-screen-xl flex flex-wrap items-end justify-between mx-auto px-6 pt-6 pb-3  '>
@@ -48,7 +53,8 @@ const Navbar = () => {
           >
             <li>
               <a
-                className='block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500'
+                onClick={() => scrollToComponent('home')}
+                className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer'
                 aria-current='page'
               >
                 Home
@@ -56,26 +62,26 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href='#about'
-                className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                onClick={() => scrollToComponent('about')}
+                className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer'
               >
                 About
               </a>
             </li>
             <li>
               <a
-                href='#'
-                className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                onClick={() => scrollToComponent('projects')}
+                className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer'
               >
                 Porfolio
               </a>
             </li>
             <li>
               <a
-                href='#'
-                className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                onClick={() => scrollToComponent('contact')}
+                className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer'
               >
-                Services
+                Contact
               </a>
             </li>
           </ul>

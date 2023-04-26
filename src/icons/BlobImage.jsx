@@ -9,7 +9,7 @@ const BlobImage = () => {
       width='100%'
       id='blobSvg'
       style={{ opacity: 1 }}
-      className=' md:mx-0 mx-auto max-w-[400px] md:max-w-[600px] lg:max-w-[600px] md:w-[1200px] aspect-auto'
+      className=' md:mx-0 mx-auto w-full md:max-w-[600px] lg:max-w-[600px] md:w-[450px] lg:w-[700px] h-auto aspect-auto'
     >
       <image
         x='0'

@@ -5,7 +5,10 @@ import ExternalLink from '../icons/ExternalLink'
 const Projects = () => {
   return (
     <section className='flex flex-col gap-4 mt-24 p-0' id='projects'>
-      <h2 className='text-eden-400 text-4xl font-bold text-center'>
+      <h2
+        className='text-eden-400 text-4xl font-bold text-center'
+        id='projects-anchor'
+      >
         PORTFOLIO
       </h2>
       <div className='h-auto p-2 flex gap-4 '>

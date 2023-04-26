@@ -63,7 +63,7 @@ const Hero = () => {
         </div>
         <div />
       </div>
-      <div className='order-1 md:order-2 '>
+      <div className='order-1 md:order-2' id='home-anchor'>
         <BlobImage />
       </div>
     </main>

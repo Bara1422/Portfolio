@@ -11,8 +11,21 @@ const Navbar = () => {
   }, [window.innerWidth])
 
   function scrollToComponent(id) {
-    const element = document.getElementById(id)
+    const anchorId = window.innerWidth > 768 ? id : `${id}-anchor`
+    const element = document.getElementById(anchorId)
+
     element.scrollIntoView({ behavior: 'smooth', block: 'center' })
+
+    /* if (window.innerWidth > 768) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    } else {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+      })
+    } */
+
     setIsOpen(false)
   }
 
@@ -42,7 +55,9 @@ const Navbar = () => {
           />
         )}
         <div
-          className=' w-full md:block  md:w-auto md:max-h-fit overflow-hidden md:overflow-visible px-4 z-[60] '
+          className={`w-full md:block  md:w-auto md:max-h-fit overflow-hidden md:overflow-visible px-4 z-[60] ${
+            isOpen ? 'block' : 'hidden'
+          } `}
           id='navbar-default'
         >
           <ul

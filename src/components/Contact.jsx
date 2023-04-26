@@ -5,7 +5,12 @@ import MapPin from '../icons/MapPin'
 const Contact = () => {
   return (
     <div className='mt-20 flex-col' id='contact'>
-      <h3 className='text-4xl text-center text-eden-400 font-bold'>Contact</h3>
+      <h3
+        className='text-4xl text-center text-eden-400 font-bold'
+        id='contact-anchor'
+      >
+        Contact
+      </h3>
       <div className='flex flex-col md:flex-row md:justify-evenly lg:justify-center lg:gap-10 gap-4  pt-4'>
         <div className='flex flex-col text-center border p-4 gap-2 rounded-3xl w-72 md:mx-0 mx-auto shadow-md shadow-eden-400'>
           <h5 className='font-bold text-xl'>Location</h5>

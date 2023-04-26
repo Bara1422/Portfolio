@@ -11,7 +11,7 @@ import BlobImage from '../icons/BlobImage'
 const Hero = () => {
   return (
     <main
-      className='p-6 flex flex-col md:flex-row md:h-[800px] z-0 justify-center items-center'
+      className='p-6 flex flex-col md:flex-row md:h-[800px]  justify-center items-center'
       id='home'
     >
       <div className='p-4 flex order-2 md:order-1 flex-col gap-6 lg:w-2/5'>

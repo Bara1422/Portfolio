@@ -13,12 +13,13 @@ const Navbar = () => {
   function scrollToComponent(id) {
     const element = document.getElementById(id)
     element.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    setIsOpen(false)
   }
 
   return (
-    <nav className='bg-white border-gray-200 dark:bg-[rgb(17,24,40)] sticky top-0 left-0 right-0 '>
-      <div className=' max-w-screen-xl flex flex-wrap items-end justify-between mx-auto px-6 pt-6 pb-3  '>
-        <span className='self-center pl-4 text-2xl font-semibold whitespace-nowrap dark:text-white z-[60] '>
+    <nav className='  dark:bg-[rgb(17,24,40)] sticky top-0 left-0 right-0 opacity-100'>
+      <div className=' max-w-screen-xl flex flex-wrap items-end justify-between mx-auto px-6 pt-6 pb-3'>
+        <span className='self-center pl-4 text-2xl font-semibold whitespace-nowrap dark:text-white'>
           BaraDev
         </span>
 
@@ -49,7 +50,7 @@ const Navbar = () => {
               isOpen
                 ? 'max-h-fit  opacity-100'
                 : 'max-h-0 -translate-y-[300px] opacity-0 md:opacity-100 md:max-h-fit md:translate-y-0 '
-            } font-medium flex flex-col p-4 md:p-0 mt-4  border md:transition-none transition-all duration-300  z-50 border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700`}
+            } font-medium flex flex-col p-4 md:p-0 mt-4  border md:transition-none transition-all duration-300 border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700`}
           >
             <li>
               <a

@@ -16,5 +16,14 @@ export const PROJECTS = [
     techs: ['React'],
     githubCode: 'https://github.com/Bara1422/WordleApp',
     demoPage: 'https://wordle-app-bara1422.vercel.app/'
+  },
+  {
+    name: 'Weather App',
+    description:
+      'Copy of a WeatherApp with 3 next days and hourly data, background images according to actual weather. ',
+    image: '/weatherapp.png',
+    techs: ['React', 'Tailwind'],
+    githubCode: 'https://github.com/Bara1422/WeatherApp',
+    demoPage: 'https://weather-app-bara1422.vercel.app/'
   }
 ]

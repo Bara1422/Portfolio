@@ -6,11 +6,11 @@ const ProjectCard = ({ project, order }) => {
   return (
     <div
       key={project.name}
-      className='bg-white border  border-gray-200 rounded-lg p-3  lg:h-[27rem] h-[40rem] mx-auto flex  lg:flex-row flex-col w-full lg:gap-7 gap-3 dark:bg-gray-800 dark:border-gray-700 '
+      className={`bg-white border  border-gray-200 rounded-lg p-3  lg:h-[27rem] h-[40rem] mx-auto flex  lg:flex-row flex-col w-full lg:gap-7 gap-3 dark:bg-gray-800 dark:border-gray-700 ${
+        order === 1 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+      } shadow-md shadow-eden-300`}
     >
-      <div
-        className={`lg:h-96 sm:h-[340px] h-[200px] lg:w-3/5 overflow-hidden border-slate-700 rounded-md border lg:my-auto shadow-md lg:order-${order} order-1`}
-      >
+      <div className='lg:h-96 sm:h-[340px] h-[200px] lg:w-3/5 overflow-hidden border-slate-700 rounded-md border lg:my-auto shadow-md  '>
         <a href={project.demoPage} className='h-full'>
           <img
             src={project.image}
@@ -19,11 +19,7 @@ const ProjectCard = ({ project, order }) => {
           />
         </a>
       </div>
-      <div
-        className={`flex flex-col gap-6 max-w-[400px] p-3 items-center mx-auto my-auto order-2 lg:order-${
-          order === 1 ? 2 : 1
-        } `}
-      >
+      <div className='flex flex-col gap-6 max-w-[400px] p-3 items-center mx-auto my-auto '>
         <h3 className='text-center text-3xl  font-bold'>{project.name}</h3>
         <p className='text-lg lg:min-h-[200px] max-h-36 overflow-auto'>
           {project.description}

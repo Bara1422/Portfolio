@@ -11,7 +11,7 @@ const Projects = () => {
       >
         PORTFOLIO
       </h2>
-      <div className='h-auto p-2 flex gap-4 flex-col'>
+      <div className='h-auto p-2 flex gap-10 flex-col'>
         {PROJECTS.map((project, index) => (
           <Fragment key={project}>
             <ProjectCard project={project} order={index % 2 === 0 ? 1 : 2} />

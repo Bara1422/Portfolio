@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className='mt-20 flex-col' id='contact'>
       <h3
-        className='text-4xl text-center text-eden-400 font-bold'
+        className='text-4xl text-center text-eden-400 outline-text dark:text-eden-400 font-bold '
         id='contact-anchor'
       >
         Contact
@@ -23,7 +23,7 @@ const Contact = () => {
             <MapPin /> Bahía Blanca, Argentina
           </a>
         </div>
-        <div className='flex flex-col text-center mx-auto border p-4 gap-2 rounded-3xl md:mx-0 w-72 shadow-md shadow-eden-400'>
+        <div className='flex flex-col text-center mx-auto border p-4 gap-2 rounded-3xl md:mx-0 w-72 shadow-md shadow-eden-500 dark:shadow-eden-400'>
           <h5 className='font-bold text-xl'>Email</h5>
           <p className='flex gap-2 justify-center font-semibold'>
             <MailOpen /> juanbaranovsky@gmail.com

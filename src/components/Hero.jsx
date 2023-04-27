@@ -8,14 +8,14 @@ import LinkedIn from '../icons/LinkedIn'
 import GitHub from '../icons/GitHub'
 import BlobImage from '../icons/BlobImage'
 
-const Hero = () => {
+const Hero = ({ darkMode }) => {
   return (
     <main
       className='p-6 flex flex-col md:flex-row md:h-[800px]  justify-center items-center'
       id='home'
     >
       <div className='p-4 flex order-2 md:order-1 flex-col gap-6 lg:w-2/5'>
-        <h1 className='text-5xl lg:text-6xl font-bold text-eden-300'>
+        <h1 className='text-5xl lg:text-6xl font-bold text-eden-300 dark:outline-none outline-text'>
           Front-End React Developer.
         </h1>
         <p className='text-xl font-semibold'>
@@ -41,7 +41,7 @@ const Hero = () => {
 
         <div className=' gap-3 flex items-center justify-center md:justify-normal md:flex-row flex-col md:divide-x-2 md:divide-y-0 divide-y-2'>
           <div>
-            <span className='text-xl '>Tech Skills</span>
+            <span className='text-xl font-semibold'>Tech Skills</span>
           </div>
           <div className='md:pl-3 pt-2 flex gap-3 items-center'>
             <span aria-label='HTML5'>
@@ -54,7 +54,7 @@ const Hero = () => {
               <JsIcon />
             </span>
             <span aria-label='React'>
-              <ReactIcon />
+              <ReactIcon darkMode={darkMode} />
             </span>
             <span aria-label='Tailwind'>
               <Tailwind />

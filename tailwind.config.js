@@ -23,6 +23,10 @@ export default {
       },
       backgroundImage: {
         freectionary: "url('/freectionary.png')"
+      },
+      fontFamily: {
+        oswald: ['Oswald', 'sans-serif', 'system-ui'],
+        overpass: ['Overpass', 'sans-serif']
       }
     }
   },

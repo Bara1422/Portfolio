@@ -37,14 +37,18 @@ const ProjectCard = ({ project, order }) => {
         </div>
         <div className='flex md:gap-7 gap-3 w-full justify-evenly '>
           <a
+            target='_blank'
             href={project.githubCode}
             className='flex text-xl items-end gap-2 hover:text-eden-500'
+            rel='noreferrer'
           >
             <span>Code</span> <GitHub />
           </a>
           <a
+            target='_blank'
             href={project.demoPage}
             className='flex text-xl items-end gap-2 hover:text-eden-500'
+            rel='noreferrer'
           >
             <span>Demo</span> <ExternalLink />
           </a>

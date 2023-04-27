@@ -8,7 +8,7 @@ import LinkedIn from '../icons/LinkedIn'
 import GitHub from '../icons/GitHub'
 import BlobImage from '../icons/BlobImage'
 
-const Hero = ({ darkMode }) => {
+const Hero = ({ isDarkMode }) => {
   return (
     <main
       className='p-6 flex flex-col md:flex-row md:h-[800px]  justify-center items-center'
@@ -19,8 +19,8 @@ const Hero = ({ darkMode }) => {
           Front-End React Developer.
         </h1>
         <p className='text-xl font-semibold'>
-          Hi, I'm Juan Martín Baranovsky. A passionate Front-End React Developer
-          based in Bahía Blanca, Argentina.
+          Hi, I'm Juan Martín Baranovsky! An enthusiastic Front-End React
+          Developer residing in Bahía Blanca, Argentina.
         </p>
         <div className='flex gap-4 justify-center md:justify-normal '>
           <a
@@ -39,7 +39,7 @@ const Hero = ({ darkMode }) => {
           </a>
         </div>
 
-        <div className=' gap-3 flex items-center justify-center md:justify-normal md:flex-row flex-col md:divide-x-2 md:divide-y-0 divide-y-2'>
+        <div className=' gap-3 flex items-center justify-center md:justify-normal md:flex-row flex-col md:divide-x-2 md:divide-y-0 divide-y-2 divide-gray-500 dark:divide-white'>
           <div>
             <span className='text-xl font-semibold'>Tech Skills</span>
           </div>
@@ -54,7 +54,7 @@ const Hero = ({ darkMode }) => {
               <JsIcon />
             </span>
             <span aria-label='React'>
-              <ReactIcon darkMode={darkMode} />
+              <ReactIcon isDarkMode={isDarkMode} />
             </span>
             <span aria-label='Tailwind'>
               <Tailwind />

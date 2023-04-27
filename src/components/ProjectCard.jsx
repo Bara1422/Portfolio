@@ -11,7 +11,7 @@ const ProjectCard = ({ project, order }) => {
         order === 1 ? 'lg:flex-row' : 'lg:flex-row-reverse'
       } shadow-md shadow-eden-300`}
     >
-      <div className='lg:h-96 sm:h-[340px] h-[200px] lg:w-3/5 overflow-hidden dark:border-slate-700 border-gray-300 rounded-md border lg:my-auto shadow-md  '>
+      <div className='lg:h-96 sm:h-[340px] h-[300px] lg:w-3/5 overflow-hidden dark:border-slate-700 border-gray-300 rounded-md border lg:my-auto shadow-md  '>
         <a href={project.demoPage} className='h-full'>
           <img
             src={project.image}

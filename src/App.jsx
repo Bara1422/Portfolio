@@ -9,6 +9,7 @@ import useDarkMode from './hooks/useDarkMode'
 
 function App() {
   const [isDarkMode, handleDarkMode] = useDarkMode()
+  console.log(isDarkMode)
 
   return (
     <div className=' dark:bg-[rgb(17,24,40)] dark:text-slate-300 flex-col justify-center min-h-screen min-w-full bg-slate-200 font-overpass'>

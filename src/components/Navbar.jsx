@@ -34,6 +34,12 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
     []
   )
 
+  if (!isDarkMode) {
+    EdenSwitch.defaultProps = {
+      checked: false
+    }
+  }
+
   function scrollToComponent(id) {
     const anchorId = window.innerWidth > 768 ? id : `${id}-anchor`
     const element = document.getElementById(anchorId)

@@ -64,7 +64,7 @@ const Hero = ({ isDarkMode }) => {
         <div />
       </div>
       <div className='order-1 md:order-2' id='home-anchor'>
-        <BlobImage />
+        <BlobImage alt='Blob Image' />
       </div>
     </main>
   )

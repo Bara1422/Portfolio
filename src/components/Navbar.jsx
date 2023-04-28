@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import BurgerMenu from '../icons/BurgerMenu'
 import { Switch } from '@mui/material'
 import { alpha, styled } from '@mui/material/styles'
@@ -7,22 +7,32 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
-    if (window.innerWidth > 768) {
-      setIsOpen(false)
-    }
-  }, [window.innerWidth])
-
-  const EdenSwitch = styled(Switch)(({ theme }) => ({
-    '& .MuiSwitch-switchBase.Mui-checked': {
-      color: '#21d6e0',
-      '&:hover': {
-        backgroundColor: alpha('#21d6e0', theme.palette.action.hoverOpacity)
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setIsOpen(false)
       }
-    },
-    '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
-      backgroundColor: '#21d6e0'
     }
-  }))
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
+  const EdenSwitch = useMemo(
+    () =>
+      styled(Switch)(({ theme }) => ({
+        '& .MuiSwitch-switchBase.Mui-checked': {
+          color: '#21d6e0',
+          '&:hover': {
+            backgroundColor: alpha('#21d6e0', theme.palette.action.hoverOpacity)
+          }
+        },
+        '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
+          backgroundColor: '#21d6e0'
+        }
+      })),
+    []
+  )
 
   function scrollToComponent(id) {
     const anchorId = window.innerWidth > 768 ? id : `${id}-anchor`
@@ -50,7 +60,7 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
           onClick={() => setIsOpen(!isOpen)}
         >
           <span className='sr-only'>Open main menu</span>
-          <BurgerMenu />
+          <BurgerMenu aria-label='Open main menu' />
         </button>
 
         {isOpen && (

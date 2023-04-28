@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { PROJECTS } from '../data'
 import ProjectCard from './ProjectCard'
 
@@ -13,9 +13,11 @@ const Projects = () => {
       </h2>
       <div className='h-auto p-2 flex gap-10 flex-col'>
         {PROJECTS.map((project, index) => (
-          <Fragment key={project.name}>
-            <ProjectCard project={project} order={index % 2 === 0 ? 1 : 2} />
-          </Fragment>
+          <ProjectCard
+            key={project.name}
+            project={project}
+            order={index % 2 === 0 ? 1 : 2}
+          />
         ))}
       </div>
     </section>

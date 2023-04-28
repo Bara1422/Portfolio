@@ -10,12 +10,14 @@ const AboutMe = () => {
         id='about-anchor'
         src='/About.jpeg'
         alt='Coding Photo'
-        className=' rounded-md  md:w-1/2 md:object-cover '
+        className=' rounded-md  md:w-1/2 md:object-cover'
+        loading='lazy'
+        decoding='async'
       />
       <div className='md:w-1/2 flex gap-3 flex-col'>
-        <h3 className='text-3xl text-eden-400 font-bold outline-text'>
+        <h2 className='text-3xl text-eden-400 font-bold outline-text'>
           About Me
-        </h3>
+        </h2>
         <p className='md:text-xl text-xl md:w-4/5 '>
           I'm a Front-End Developer with React as main tech complemented with
           HTML, CSS, JavaScript, Tailwind, Styled-Components among others.

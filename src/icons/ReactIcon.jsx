@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ReactIcon = ({ isDarkMode }) => {
+const ReactIcon = React.memo(({ isDarkMode }) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -28,6 +28,6 @@ const ReactIcon = ({ isDarkMode }) => {
       />
     </svg>
   )
-}
+})
 
 export default ReactIcon

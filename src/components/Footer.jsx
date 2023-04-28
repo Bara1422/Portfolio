@@ -1,21 +1,25 @@
-import React from 'react'
+import React, { memo } from 'react'
 import GitHub from '../icons/GitHub'
 import LinkedIn from '../icons/LinkedIn'
 
 const Footer = () => {
   return (
-    <footer className='flex h-16 mt-16 flex-col md:flex-row justify-evenly items-center'>
+    <footer className='flex h-16 mt-16 md:gap-0 gap-2 flex-col md:flex-row justify-evenly items-center'>
       <h6 className='font-bold order-2 md:order-1'>
         Juan Martín Baranovsky Dev
       </h6>
       <div className='flex gap-3 order-1 md:order-2'>
-        <a href='https://github.com/Bara1422' target='_blank' rel='noreferrer'>
+        <a
+          href='https://github.com/Bara1422'
+          target='_blank'
+          rel='noreferrer noopener'
+        >
           <GitHub scale='hover:scale-110' />
         </a>
         <a
           href='https://www.linkedin.com/in/juan-baranovsky/'
           target='_blank'
-          rel='noreferrer'
+          rel='noreferrer noopener'
         >
           <LinkedIn />
         </a>
@@ -24,4 +28,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default memo(Footer)

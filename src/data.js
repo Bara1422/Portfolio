@@ -31,14 +31,7 @@ export const PROJECTS = [
     description:
       'E-commerce integrated with Backend make in Node+Express, Mercado Pago API, JWT, Redux, Styled-Components, Axios, React-Query.',
     image: '/E-Commerce.png',
-    techs: [
-      'React',
-      'Styled-Components',
-      'Mercado Pago',
-      'Redux',
-      'JWT',
-      'React-Query'
-    ],
+    techs: ['React-Query', 'Redux', 'JWT'],
     githubCode:
       'https://github.com/Bara1422/frontend-integrador/tree/node-integrate',
     demoPage: 'https://tod-gaming-reactintegrador-bara1422.vercel.app/'

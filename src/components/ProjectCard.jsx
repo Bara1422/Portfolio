@@ -25,11 +25,11 @@ const ProjectCard = ({ project, order }) => {
         <p className='text-lg lg:min-h-[200px] max-h-36 overflow-auto'>
           {project.description}
         </p>
-        <div className='flex gap-3 text-xl font-semibold'>
+        <div className='flex gap-3 text-xl font-semibold flex-wrap'>
           {project.techs.map((tech) => (
             <span
               key={tech}
-              className='p-1 px-2 dark:bg-gray-700 rounded-md shadow-md hover:text-eden-500 cursor-default'
+              className='p-1 px-2 dark:bg-gray-700 rounded-md shadow-md  hover:text-eden-500 cursor-default'
             >
               {tech}
             </span>

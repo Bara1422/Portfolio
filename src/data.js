@@ -29,7 +29,7 @@ export const PROJECTS = [
   {
     name: 'E-commerce',
     description:
-      'E-commerce integrated with Backend make in Node+Express, Mercado Pago API, JWT, Redux, Styled-Components, Axios, React-Query.',
+      'E-commerce integrated with Backend made in Node+Express, Mercado Pago API, JWT, Redux, Styled-Components, Axios, React-Query.',
     image: '/E-Commerce.png',
     techs: ['React-Query', 'Redux', 'JWT'],
     githubCode:

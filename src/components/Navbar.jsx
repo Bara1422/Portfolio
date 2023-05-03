@@ -41,6 +41,11 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
   }
 
   function scrollToComponent(id) {
+    if (id === 'home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      setIsOpen(false)
+      return
+    }
     const anchorId = window.innerWidth > 768 ? id : `${id}-anchor`
     const element = document.getElementById(anchorId)
     element.scrollIntoView({ behavior: 'smooth', block: 'center' })
@@ -52,7 +57,7 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
       <div className=' max-w-screen-xl flex flex-wrap items-end justify-between mx-auto px-6 pt-6 pb-3'>
         <a
           onClick={() => scrollToComponent('home')}
-          className='self-center pl-4 text-2xl font-semibold whitespace-nowrap cursor-pointer hover:text-eden-400'
+          className='self-center md:pl-4 text-2xl font-semibold whitespace-nowrap cursor-pointer hover:text-eden-400'
         >
           BaraDev
         </a>
@@ -60,7 +65,7 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
         <button
           data-collapse-toggle='navbar-default'
           type='button'
-          className='inline-flex items-end p-2 mr-4 ml-3 text-sm z-[60] text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+          className='inline-flex items-end p-2 md:mr-4 ml-3 text-sm z-[60] text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
           aria-controls='navbar-default'
           aria-expanded='false'
           onClick={() => setIsOpen(!isOpen)}

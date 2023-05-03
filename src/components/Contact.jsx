@@ -25,9 +25,12 @@ const Contact = () => {
         </div>
         <div className='flex flex-col text-center mx-auto border p-4 border-gray-300  gap-2 rounded-3xl md:mx-0 w-72 shadow-md shadow-eden-500 dark:shadow-eden-400 bg-white dark:bg-[rgb(17,24,40)] '>
           <h5 className='font-bold text-xl'>Email</h5>
-          <p className='flex gap-2 justify-center font-semibold'>
+          <a
+            href='mailto:juanbaranovsky@gmail.com'
+            className='flex gap-2 justify-center font-semibold  hover:text-eden-400'
+          >
             <MailOpen /> juanbaranovsky@gmail.com
-          </p>
+          </a>
         </div>
       </div>
     </div>

@@ -11,10 +11,10 @@ import BlobImage from '../icons/BlobImage'
 const Hero = ({ isDarkMode }) => {
   return (
     <main
-      className='p-6 flex flex-col md:flex-row md:h-[800px]  justify-center items-center'
+      className='px-6 pb-6 flex flex-col md:flex-row md:h-[800px]  justify-center items-center'
       id='home'
     >
-      <div className='p-4 flex order-2 md:order-1 flex-col gap-6 lg:w-2/5'>
+      <div className='md:p-4 flex order-2 md:order-1 flex-col gap-6 lg:w-2/5'>
         <h1 className='text-5xl lg:text-6xl font-bold text-eden-300 dark:outline-none outline-text'>
           Front-End React Developer.
         </h1>
@@ -39,11 +39,11 @@ const Hero = ({ isDarkMode }) => {
           </a>
         </div>
 
-        <div className=' gap-3 flex items-center justify-center md:justify-normal md:flex-row flex-col md:divide-x-2 md:divide-y-0 divide-y-2 divide-gray-500 dark:divide-white'>
+        <div className=' md:gap-3 gap-1 flex items-center justify-center md:justify-normal md:flex-row flex-col md:divide-x-2 md:divide-y-0 divide-y-2 divide-gray-500 dark:divide-white'>
           <div>
             <span className='text-xl font-semibold'>Tech Skills</span>
           </div>
-          <div className='md:pl-3 pt-2 flex gap-3 items-center'>
+          <div className='md:pl-3 md:pt-0 pt-1 flex gap-3 items-center'>
             <span aria-label='HTML5'>
               <HtmlIcon />
             </span>

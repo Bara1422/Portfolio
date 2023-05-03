@@ -4,14 +4,14 @@ import ProjectCard from './ProjectCard'
 
 const Projects = () => {
   return (
-    <section className='flex flex-col gap-4 mt-24 p-0'>
+    <section className='flex flex-col  mt-24 md:p-5 2xl:max-w-screen-xl mx-auto'>
       <h2
         className='text-eden-400 text-4xl font-bold text-center outline-text'
         id='projects-anchor'
       >
         PORTFOLIO
       </h2>
-      <div className='h-auto p-2 flex gap-10 flex-col'>
+      <div className='h-auto p-6 flex gap-10 flex-col'>
         {PROJECTS.map((project, index) => (
           <ProjectCard
             key={project.name}

@@ -27,11 +27,11 @@ export const PROJECTS = [
     demoPage: 'https://weather-app-bara1422.vercel.app/'
   },
   {
-    name: 'E-commerce',
+    name: 'Todo-Gaming',
     description:
-      'E-commerce integrated with Backend made in Node+Express, Mercado Pago API, JWT, Redux, Styled-Components, Axios, React-Query.',
+      'E-commerce integrated with Backend made in Node+Express, Mercado Pago API, JWT, Redux, Styled-Components, Axios, React-Query, Neon.tech DB.',
     image: '/E-Commerce.png',
-    techs: ['React-Query', 'Redux', 'JWT'],
+    techs: ['React-Query', 'Redux', 'React-Router'],
     githubCode:
       'https://github.com/Bara1422/frontend-integrador/tree/node-integrate',
     demoPage: 'https://tod-gaming-reactintegrador-bara1422.vercel.app/'

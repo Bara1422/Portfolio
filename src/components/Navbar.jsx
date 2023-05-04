@@ -54,7 +54,7 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
 
   return (
     <nav className='  dark:bg-[rgb(17,24,40)] bg-slate-200 sticky top-0 left-0 right-0 opacity-100'>
-      <div className=' max-w-screen-xl flex flex-wrap items-end justify-between mx-auto px-6 pt-6 pb-3'>
+      <div className=' max-w-screen-xl flex flex-wrap items-end justify-between mx-auto px-3 pt-6 pb-3'>
         <a
           onClick={() => scrollToComponent('home')}
           className='self-center md:pl-4 text-2xl font-semibold whitespace-nowrap cursor-pointer hover:text-eden-400'
@@ -91,7 +91,7 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
               isOpen
                 ? 'max-h-fit  opacity-100'
                 : 'max-h-0 -translate-y-[300px] opacity-0 md:opacity-100 md:max-h-fit md:translate-y-0 '
-            } font-semibold flex flex-col md:items-center p-4 md:p-0 mt-4  border md:transition-none transition-all duration-300 border-gray-50 bg-gray-200 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700`}
+            } font-semibold flex flex-col md:items-center p-4 md:p-0 mt-4  border md:transition-none transition-all duration-300 border-gray-50 bg-slate-200 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700`}
           >
             <li>
               <a

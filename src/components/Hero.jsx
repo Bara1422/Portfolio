@@ -56,7 +56,7 @@ const Hero = ({ isDarkMode }) => {
             <span aria-label='React'>
               <ReactIcon isDarkMode={isDarkMode} />
             </span>
-            <span aria-label='Tailwind'>
+            <span aria-label='Tailwind' id='about-anchor'>
               <Tailwind />
             </span>
           </div>

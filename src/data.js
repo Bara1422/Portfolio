@@ -2,7 +2,7 @@ export const PROJECTS = [
   {
     name: 'Freectionary',
     description:
-      'An English dictionary using the API from https://dictionaryapi.dev',
+      'An English dictionary app that uses a https://dictionaryapi.dev API to provide accurate definitions and translations of words.',
     image: '/freectionaryImg.png',
     techs: ['React', 'Tailwind'],
     githubCode: 'https://github.com/Bara1422/Freectionary',
@@ -20,7 +20,7 @@ export const PROJECTS = [
   {
     name: 'Weather App',
     description:
-      'Copy of a WeatherApp with 3 next days and hourly data, background images according to actual weather. ',
+      'A sleek and easy-to-use app that provides weather information for the current day and next two days, as well as hourly data. The background images change according to the actual weather, making it visually appealing. ',
     image: '/weatherapp.png',
     techs: ['React', 'Tailwind'],
     githubCode: 'https://github.com/Bara1422/WeatherApp',
@@ -29,7 +29,7 @@ export const PROJECTS = [
   {
     name: 'Todo-Gaming',
     description:
-      'E-commerce integrated with Backend made in Node+Express, Mercado Pago API, JWT, Redux, Styled-Components, Axios, React-Query, Neon.tech DB.',
+      'E-commerce integrated with Backend made in Node+Express, with the Mercado Pago API. The FrontEnd incorportes modern features such as Redux, React-Query, and more.',
     image: '/E-Commerce.png',
     techs: ['React-Query', 'Redux', 'React-Router'],
     githubCode:

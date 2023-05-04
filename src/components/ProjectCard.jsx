@@ -15,7 +15,7 @@ const ProjectCard = ({ project, order }) => {
         <a href={project.demoPage} className='h-full'>
           <img
             src={project.image}
-            alt=''
+            alt={`Image of ${project.name} project`}
             className=' transition-all ease-in-out duration-[6000ms] sm:object-cover w-full object-top lg:hover:object-bottom object-cover max-h-full h-full'
           />
         </a>

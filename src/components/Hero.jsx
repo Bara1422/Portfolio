@@ -11,7 +11,7 @@ import BlobImage from '../icons/BlobImage'
 const Hero = ({ isDarkMode }) => {
   return (
     <main
-      className='px-6 pb-6 flex flex-col md:flex-row h-screen  justify-center items-center'
+      className='px-6 pb-6 flex flex-col md:flex-row h-screen md:justify-center justify-around items-center'
       id='home'
     >
       <div className='md:p-4 flex order-2 md:order-1 flex-col gap-6 lg:w-2/5'>
@@ -64,7 +64,7 @@ const Hero = ({ isDarkMode }) => {
         <div />
       </div>
       <div className='order-1 md:order-2' id='home-anchor'>
-        <BlobImage alt='Blob Image' />
+        <BlobImage alt='Image of me' />
       </div>
     </main>
   )

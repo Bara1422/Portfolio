@@ -9,14 +9,14 @@ const BlobImage = () => {
       width='100%'
       id='blobSvg'
       style={{ opacity: 1 }}
-      className=' md:mx-0 mx-auto w-full md:max-w-[600px] lg:max-w-[600px] md:w-[450px] lg:w-[700px] h-auto aspect-auto'
+      className=' md:mx-0 mx-auto  w-[320px] md:max-w-[600px] lg:max-w-[600px] md:w-[450px] lg:w-[700px] h-auto aspect-auto'
     >
       <image
         x='0'
         y='0'
         width='100%'
         height='600px'
-        alt='Blob Image'
+        alt='Image of me'
         clipPath='url(#shape)'
         href='/Perfil.jpeg'
         preserveAspectRatio='none'

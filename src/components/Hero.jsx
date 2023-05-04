@@ -11,11 +11,11 @@ import BlobImage from '../icons/BlobImage'
 const Hero = ({ isDarkMode }) => {
   return (
     <main
-      className='px-6 pb-6 flex flex-col md:flex-row md:h-[800px]  justify-center items-center'
+      className='px-6 pb-6 flex flex-col md:flex-row h-screen  justify-center items-center'
       id='home'
     >
       <div className='md:p-4 flex order-2 md:order-1 flex-col gap-6 lg:w-2/5'>
-        <h1 className='text-5xl lg:text-6xl font-bold text-eden-300 dark:outline-none outline-text'>
+        <h1 className='text-5xl lg:text-6xl font-bold dark:text-eden-300 text-eden-400 dark:outline-none outline-text'>
           Front-End React Developer.
         </h1>
         <p className='text-xl font-semibold'>

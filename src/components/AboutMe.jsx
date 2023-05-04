@@ -3,12 +3,12 @@ import React from 'react'
 const AboutMe = () => {
   return (
     <div className='p-2'>
-      <div className='shadow-md dark:shadow-eden-400 bg-gray-50 border border-gray-200 rounded-lg md:w-4/5 p-4 mx-auto flex md:max-w-4xl max-w-[500px] md:flex-row flex-col sm:mx-auto md:gap-7 gap-3 dark:bg-gray-800 dark:border-gray-700 '>
+      <div className='shadow-md dark:shadow-eden-400 bg-gray-50 border border-gray-200 rounded-lg md:w-4/5 p-4 mx-auto flex md:max-w-4xl max-w-[362px] md:flex-row flex-col sm:mx-auto md:gap-7 gap-3 dark:bg-gray-800 dark:border-gray-700 '>
         <img
           id='about'
           src='/About.jpeg'
           alt='Coding Photo'
-          className=' rounded-md  md:w-1/2 md:object-cover '
+          className=' rounded-md  md:w-1/2 md:object-cover'
           loading='lazy'
           decoding='async'
         />

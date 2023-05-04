@@ -3,6 +3,13 @@ import BurgerMenu from '../icons/BurgerMenu'
 import { Switch } from '@mui/material'
 import { alpha, styled } from '@mui/material/styles'
 
+const menuLinks = [
+  { name: 'Home', target: 'home' },
+  { name: 'About', target: 'about' },
+  { name: 'Portfolio', target: 'projects' },
+  { name: 'Contact', target: 'contact' }
+]
+
 const Navbar = ({ isDarkMode, handleDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -57,7 +64,7 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
       <div className=' max-w-screen-xl flex flex-wrap items-end justify-between mx-auto px-3 pt-6 pb-3'>
         <a
           onClick={() => scrollToComponent('home')}
-          className='self-center md:pl-4 text-2xl font-semibold whitespace-nowrap cursor-pointer hover:text-eden-400'
+          className='self-center md:pl-4 text-3xl font-semibold whitespace-nowrap cursor-pointer hover:text-eden-400'
         >
           BaraDev
         </a>
@@ -93,39 +100,18 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
                 : 'max-h-0 -translate-y-[300px] opacity-0 md:opacity-100 md:max-h-fit md:translate-y-0 '
             } font-semibold flex flex-col md:items-center p-4 md:p-0 mt-4  border md:transition-none transition-all duration-300 border-gray-50 bg-slate-200 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700`}
           >
-            <li>
-              <a
-                onClick={() => scrollToComponent('home')}
-                className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-eden-400 md:p-0 dark:text-white md:dark:hover:text-eden-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer'
-                aria-current='page'
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={() => scrollToComponent('about')}
-                className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-eden-400 md:p-0 dark:text-white md:dark:hover:text-eden-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer'
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={() => scrollToComponent('projects')}
-                className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-eden-400 md:p-0 dark:text-white md:dark:hover:text-eden-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer'
-              >
-                Porfolio
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={() => scrollToComponent('contact')}
-                className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-eden-400 md:p-0 dark:text-white md:dark:hover:text-eden-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer'
-              >
-                Contact
-              </a>
-            </li>
+            {menuLinks.map((link) => (
+              <li key={link.name}>
+                <a
+                  onClick={() => scrollToComponent(link.target)}
+                  className='block py-2 pl-3 pr-4 text-gray-900 text-xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-eden-400 md:p-0 dark:text-white md:dark:hover:text-eden-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer'
+                  aria-current='page'
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
+
             <EdenSwitch onChange={handleDarkMode} checked={isDarkMode} />
           </ul>
         </div>

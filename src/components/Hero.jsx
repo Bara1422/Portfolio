@@ -12,11 +12,11 @@ import { Tooltip } from '@mui/material'
 const Hero = ({ isDarkMode }) => {
   return (
     <main
-      className='px-6 pb-6 flex flex-col md:flex-row h-screen md:justify-center justify-around items-center'
+      className='px-6 pb-6 flex flex-col md:flex-row md:h-screen md:justify-center justify-around items-center'
       id='home'
     >
       <div className='md:p-4 flex order-2 md:order-1 flex-col gap-6 lg:w-2/5'>
-        <h1 className='text-5xl lg:text-6xl font-bold dark:text-eden-300 text-eden-400 dark:outline-none outline-text'>
+        <h1 className='text-5xl lg:text-6xl font-bold dark:text-eden-300 text-[#2a3b47] dark:outline-none '>
           Front-End React Developer.
         </h1>
         <p className='text-xl font-semibold'>
@@ -52,31 +52,28 @@ const Hero = ({ isDarkMode }) => {
           </div>
           <div className='md:pl-3 md:pt-0 pt-1 flex gap-3 items-center'>
             <Tooltip title='HTML5'>
-              <span id='html5-label'>
-                <HtmlIcon aria-labelledby='html5-label' />
+              <span aria-label='HTML5 Icon'>
+                <HtmlIcon />
               </span>
             </Tooltip>
             <Tooltip title='CSS3'>
-              <span id='css3-label'>
-                <CssIcon aria-labelledby='css3-label' />
+              <span aria-label='CSS3 Icon'>
+                <CssIcon />
               </span>
             </Tooltip>
             <Tooltip title='JavaScript'>
-              <span id='javascript-label'>
-                <JsIcon aria-labelledby='javascript-label' />
+              <span aria-label='JavaScript Icon'>
+                <JsIcon />
               </span>
             </Tooltip>
             <Tooltip title='React'>
-              <span id='react-label'>
-                <ReactIcon
-                  isDarkMode={isDarkMode}
-                  aria-labelledby='react-label'
-                />
+              <span aria-label='React Icon'>
+                <ReactIcon isDarkMode={isDarkMode} />
               </span>
             </Tooltip>
             <Tooltip title='Tailwind'>
-              <span aria-label='Tailwind' id='about-anchor'>
-                <Tailwind aria-labelledby='about-anchor' />
+              <span aria-label='Tailwind Icon' id='about-anchor'>
+                <Tailwind />
               </span>
             </Tooltip>
           </div>

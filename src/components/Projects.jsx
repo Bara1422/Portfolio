@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <section className='flex flex-col  mt-24 md:p-5 2xl:max-w-screen-xl mx-auto'>
       <h2
-        className='text-eden-500 dark:text-eden-400 text-4xl font-bold text-center outline-text'
+        className='text-[#2a3b47] dark:text-eden-400 text-4xl font-bold text-center outline-text'
         id='projects-anchor'
       >
         PORTFOLIO

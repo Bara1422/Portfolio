@@ -52,28 +52,31 @@ const Hero = ({ isDarkMode }) => {
           </div>
           <div className='md:pl-3 md:pt-0 pt-1 flex gap-3 items-center'>
             <Tooltip title='HTML5'>
-              <span aria-label='HTML5'>
-                <HtmlIcon />
+              <span id='html5-label'>
+                <HtmlIcon aria-labelledby='html5-label' />
               </span>
             </Tooltip>
             <Tooltip title='CSS3'>
-              <span aria-label='CSS3'>
-                <CssIcon />
+              <span id='css3-label'>
+                <CssIcon aria-labelledby='css3-label' />
               </span>
             </Tooltip>
             <Tooltip title='JavaScript'>
-              <span aria-label='JavaScript'>
-                <JsIcon />
+              <span id='javascript-label'>
+                <JsIcon aria-labelledby='javascript-label' />
               </span>
             </Tooltip>
             <Tooltip title='React'>
-              <span aria-label='React'>
-                <ReactIcon isDarkMode={isDarkMode} />
+              <span id='react-label'>
+                <ReactIcon
+                  isDarkMode={isDarkMode}
+                  aria-labelledby='react-label'
+                />
               </span>
             </Tooltip>
             <Tooltip title='Tailwind'>
               <span aria-label='Tailwind' id='about-anchor'>
-                <Tailwind />
+                <Tailwind aria-labelledby='about-anchor' />
               </span>
             </Tooltip>
           </div>

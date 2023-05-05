@@ -112,11 +112,13 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
               </li>
             ))}
 
-            <DarkModeSwitch
-              onChange={handleDarkMode}
-              checked={isDarkMode}
-              aria-label='Toggle dark mode'
-            />
+            <li>
+              <DarkModeSwitch
+                onChange={handleDarkMode}
+                checked={isDarkMode}
+                aria-label='Toggle dark mode'
+              />
+            </li>
           </ul>
         </div>
       </div>

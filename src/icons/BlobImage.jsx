@@ -18,7 +18,7 @@ const BlobImage = () => {
         height='600px'
         alt='Image of me'
         clipPath='url(#shape)'
-        href='/Perfil.jpeg'
+        href='/Perfil.webp'
         preserveAspectRatio='none'
       />{' '}
       <defs>

@@ -113,7 +113,11 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
             ))}
 
             <li>
+              <label htmlFor='dark-mode-switch' className='sr-only'>
+                Toggle dark mode
+              </label>
               <DarkModeSwitch
+                id='dark-mode-switch'
                 onChange={handleDarkMode}
                 checked={isDarkMode}
                 aria-label='Toggle dark mode'

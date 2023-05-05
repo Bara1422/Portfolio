@@ -5,9 +5,9 @@ import LinkedIn from '../icons/LinkedIn'
 const Footer = () => {
   return (
     <footer className='flex h-16 mt-16 md:gap-0 gap-2 flex-col md:flex-row justify-evenly items-center'>
-      <h6 className='font-bold order-2 md:order-1'>
+      <h3 className='font-bold order-2 md:order-1'>
         Juan Martín Baranovsky Dev
-      </h6>
+      </h3>
       <div className='flex gap-3 order-1 md:order-2'>
         <a
           href='https://github.com/Bara1422'

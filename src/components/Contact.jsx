@@ -19,6 +19,7 @@ const Contact = () => {
             className='flex gap-2 justify-center hover:text-eden-400 font-semibold'
             target='_blank'
             rel='noreferrer'
+            aria-label='Map of Bahía Blanca, Argentina'
           >
             <MapPin /> Bahía Blanca, Argentina
           </a>
@@ -28,6 +29,7 @@ const Contact = () => {
           <a
             href='mailto:juanbaranovsky@gmail.com'
             className='flex gap-2 justify-center font-semibold  hover:text-eden-400'
+            aria-label='Send e-mail to juanbaranovsky@gmail.com'
           >
             <MailOpen /> juanbaranovsky@gmail.com
           </a>

@@ -7,7 +7,7 @@ const AboutMe = () => {
         <img
           id='about'
           src='/About.jpeg'
-          alt='Coding Photo'
+          alt='Developer working photo'
           className=' rounded-md  md:w-1/2 md:object-cover shadow-md'
           loading='lazy'
           decoding='async'

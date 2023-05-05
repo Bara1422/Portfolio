@@ -31,6 +31,7 @@ const Hero = ({ isDarkMode }) => {
               rel='noreferrer'
             >
               <GitHub scale='hover:scale-110' />
+              <span className='sr-only'>GitHub Profile</span>
             </a>
           </Tooltip>
           <Tooltip title='LinkedIn'>
@@ -40,13 +41,14 @@ const Hero = ({ isDarkMode }) => {
               rel='noreferrer'
             >
               <LinkedIn />
+              <span className='sr-only'>LinkedIn Profile</span>
             </a>
           </Tooltip>
         </div>
 
         <div className=' md:gap-3 gap-1 flex items-center justify-center md:justify-normal md:flex-row flex-col md:divide-x-2 md:divide-y-0 divide-y-2 divide-gray-500 dark:divide-white'>
           <div>
-            <span className='text-xl font-semibold'>Tech Skills</span>
+            <h3 className='text-xl font-semibold'>Tech Skills</h3>
           </div>
           <div className='md:pl-3 md:pt-0 pt-1 flex gap-3 items-center'>
             <Tooltip title='HTML5'>

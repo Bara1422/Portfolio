@@ -25,7 +25,7 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
     }
   }, [])
 
-  const EdenSwitch = useMemo(
+  const DarkModeSwitch = useMemo(
     () =>
       styled(Switch)(({ theme }) => ({
         '& .MuiSwitch-switchBase.Mui-checked': {
@@ -42,7 +42,7 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
   )
 
   if (!isDarkMode) {
-    EdenSwitch.defaultProps = {
+    DarkModeSwitch.defaultProps = {
       checked: false
     }
   }
@@ -66,7 +66,7 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
           onClick={() => scrollToComponent('home')}
           className='self-center md:pl-4 text-3xl font-semibold whitespace-nowrap cursor-pointer hover:text-eden-400'
         >
-          BaraDev
+          <h2 className='dark:text-white font'>BaraDev</h2>
         </a>
 
         <button
@@ -112,7 +112,11 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
               </li>
             ))}
 
-            <EdenSwitch onChange={handleDarkMode} checked={isDarkMode} />
+            <DarkModeSwitch
+              onChange={handleDarkMode}
+              checked={isDarkMode}
+              aria-label='Toggle dark mode'
+            />
           </ul>
         </div>
       </div>

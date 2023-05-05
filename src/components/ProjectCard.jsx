@@ -41,6 +41,7 @@ const ProjectCard = ({ project, order }) => {
             href={project.githubCode}
             className='flex text-xl items-end gap-2 hover:text-eden-500'
             rel='noreferrer'
+            aria-label={`GitHub code of ${project.name} project`}
           >
             <span>Code</span> <Github2 />
           </a>
@@ -49,6 +50,7 @@ const ProjectCard = ({ project, order }) => {
             href={project.demoPage}
             className='flex text-xl items-end gap-2 hover:text-eden-500'
             rel='noreferrer'
+            aria-label={`Live page of ${project.name} project`}
           >
             <span>Demo</span> <ExternalLink />
           </a>

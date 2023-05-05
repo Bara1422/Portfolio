@@ -4,7 +4,7 @@ export const PROJECTS = [
     description:
       'An English dictionary app that uses a https://dictionaryapi.dev API to provide accurate definitions and pronunciations of words.',
     image: '/freectionaryImg.png',
-    techs: ['React', 'Tailwind'],
+    techs: ['React', 'Tailwind', 'React-Router'],
     githubCode: 'https://github.com/Bara1422/Freectionary',
     demoPage: 'https://freectionary-app.vercel.app/'
   },

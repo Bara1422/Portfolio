@@ -13,6 +13,7 @@ const Footer = () => {
           href='https://github.com/Bara1422'
           target='_blank'
           rel='noreferrer noopener'
+          aria-label='GitHub Profile of Juan Martín Baranovsky'
         >
           <GitHub scale='hover:scale-110' />
         </a>
@@ -20,6 +21,7 @@ const Footer = () => {
           href='https://www.linkedin.com/in/juan-baranovsky/'
           target='_blank'
           rel='noreferrer noopener'
+          aria-label='LinkedIn Profile of Juan Martín Baranovsky'
         >
           <LinkedIn />
         </a>

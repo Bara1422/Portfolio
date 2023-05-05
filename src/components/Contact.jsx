@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className='mt-20 flex-col' id='contact'>
       <h2
-        className='text-4xl text-center text-eden-400 outline-text dark:text-eden-400 font-bold '
+        className='text-4xl text-center text-eden-500 outline-text dark:text-eden-400 font-bold '
         id='contact-anchor'
       >
         CONTACT

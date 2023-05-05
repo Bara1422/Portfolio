@@ -8,12 +8,12 @@ const AboutMe = () => {
           id='about'
           src='/About.jpeg'
           alt='Coding Photo'
-          className=' rounded-md  md:w-1/2 md:object-cover'
+          className=' rounded-md  md:w-1/2 md:object-cover shadow-md'
           loading='lazy'
           decoding='async'
         />
         <div className='md:w-1/2 flex gap-3 flex-col'>
-          <h2 className='text-3xl text-eden-400 font-bold outline-text'>
+          <h2 className='text-3xl text-eden-500 dark:eden-400 font-bold outline-text'>
             About Me
           </h2>
           <p className='md:text-xl text-md md:w-5/5 '>

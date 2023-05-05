@@ -7,6 +7,7 @@ import Tailwind from '../icons/Tailwind'
 import LinkedIn from '../icons/LinkedIn'
 import GitHub from '../icons/GitHub'
 import BlobImage from '../icons/BlobImage'
+import { Tooltip } from '@mui/material'
 
 const Hero = ({ isDarkMode }) => {
   return (
@@ -23,20 +24,24 @@ const Hero = ({ isDarkMode }) => {
           Developer residing in Bahía Blanca, Argentina.
         </p>
         <div className='flex gap-4 justify-center md:justify-normal '>
-          <a
-            href='https://github.com/Bara1422'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <GitHub scale='hover:scale-110' />
-          </a>
-          <a
-            href='https://www.linkedin.com/in/juan-baranovsky/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <LinkedIn />
-          </a>
+          <Tooltip title='Github'>
+            <a
+              href='https://github.com/Bara1422'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <GitHub scale='hover:scale-110' />
+            </a>
+          </Tooltip>
+          <Tooltip title='LinkedIn'>
+            <a
+              href='https://www.linkedin.com/in/juan-baranovsky/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <LinkedIn />
+            </a>
+          </Tooltip>
         </div>
 
         <div className=' md:gap-3 gap-1 flex items-center justify-center md:justify-normal md:flex-row flex-col md:divide-x-2 md:divide-y-0 divide-y-2 divide-gray-500 dark:divide-white'>
@@ -44,21 +49,31 @@ const Hero = ({ isDarkMode }) => {
             <span className='text-xl font-semibold'>Tech Skills</span>
           </div>
           <div className='md:pl-3 md:pt-0 pt-1 flex gap-3 items-center'>
-            <span aria-label='HTML5'>
-              <HtmlIcon />
-            </span>
-            <span aria-label='CSS3'>
-              <CssIcon />
-            </span>
-            <span aria-label='JavaScript'>
-              <JsIcon />
-            </span>
-            <span aria-label='React'>
-              <ReactIcon isDarkMode={isDarkMode} />
-            </span>
-            <span aria-label='Tailwind' id='about-anchor'>
-              <Tailwind />
-            </span>
+            <Tooltip title='HTML5'>
+              <span aria-label='HTML5'>
+                <HtmlIcon />
+              </span>
+            </Tooltip>
+            <Tooltip title='CSS3'>
+              <span aria-label='CSS3'>
+                <CssIcon />
+              </span>
+            </Tooltip>
+            <Tooltip title='JavaScript'>
+              <span aria-label='JavaScript'>
+                <JsIcon />
+              </span>
+            </Tooltip>
+            <Tooltip title='React'>
+              <span aria-label='React'>
+                <ReactIcon isDarkMode={isDarkMode} />
+              </span>
+            </Tooltip>
+            <Tooltip title='Tailwind'>
+              <span aria-label='Tailwind' id='about-anchor'>
+                <Tailwind />
+              </span>
+            </Tooltip>
           </div>
         </div>
         <div />

@@ -5,8 +5,8 @@ const JsIcon = () => {
     <svg
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 48 48'
-      width='40px'
-      height='40px'
+      width='37.35px'
+      height='37.35px'
       baseProfile='basic'
       className='rounded-full'
     >

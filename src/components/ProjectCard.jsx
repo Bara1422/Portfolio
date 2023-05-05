@@ -12,11 +12,11 @@ const ProjectCard = ({ project, order }) => {
       } shadow-md shadow-eden-300`}
     >
       <div className='lg:h-96 sm:h-[340px] h-[250px] lg:w-3/5 overflow-hidden dark:border-slate-700 border-gray-300 rounded-md border lg:my-auto shadow-md  '>
-        <a href={project.demoPage} className='h-full'>
+        <a href={project.demoPage} className='h-full '>
           <img
             src={project.image}
             alt={`Image of ${project.name} project`}
-            className=' transition-all ease-in-out duration-[6000ms] sm:object-cover w-full object-top lg:hover:object-bottom object-cover max-h-full h-full'
+            className=' transition-all ease-in-out duration-[6000ms] sm:object-cover w-full object-top lg:hover:object-bottom object-cover max-h-full h-full '
           />
         </a>
       </div>

@@ -29,11 +29,10 @@ export const PROJECTS = [
   {
     name: 'Todo-Gaming',
     description:
-      'E-commerce integrated with Backend made in Node+Express, with the Mercado Pago API. The FrontEnd incorportes modern features such as Redux, React-Query, and more.',
-    image: '/E-Commerce.webp',
-    techs: ['React-Query', 'Redux', 'React-Router'],
-    githubCode:
-      'https://github.com/Bara1422/frontend-integrador/tree/node-integrate',
-    demoPage: 'https://tod-gaming-reactintegrador-bara1422.vercel.app/'
+      "E-commerce integrated with Backend made in Node+Express, with the Mercado Pago API. The FrontEnd incorportes modern features such as Redux, React-Query, and more. Initially this project was Nucba's final work and was done with React so I decided to migrate it to NextJs 13 with app directory and learn Next along the way. ",
+    image: '/Todo-Gaming-Next.webp',
+    techs: ['React-Query', 'Redux', 'NextJs'],
+    githubCode: 'https://github.com/Bara1422/Todo-Gaming-next',
+    demoPage: 'https://todo-gaming-next.vercel.app/'
   }
 ]

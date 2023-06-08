@@ -14,8 +14,7 @@ const BlobImage = () => {
       <image
         x='0'
         y='0'
-        width='100%'
-        height='600px'
+        height='650px'
         alt='Image of me'
         clipPath='url(#shape)'
         href='/Perfil.webp'

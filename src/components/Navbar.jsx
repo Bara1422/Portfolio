@@ -60,13 +60,15 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
   }
 
   return (
-    <nav className='  dark:bg-[rgb(17,24,40)] bg-slate-200 sticky top-0 left-0 right-0 opacity-100'>
+    <nav className='  dark:bg-[rgb(17,24,40)] bg-slate-200 sticky top-0 left-0 right-0 opacity-100 border-b border-slate-400'>
       <div className=' max-w-screen-xl flex flex-wrap items-end justify-between mx-auto px-3 pt-6 pb-3'>
         <a
           onClick={() => scrollToComponent('home')}
-          className='self-center md:pl-4 text-3xl font-semibold whitespace-nowrap cursor-pointer hover:text-eden-400'
+          className='self-center md:pl-4 text-3xl font-semibold whitespace-nowrap cursor-pointer hover:text-eden-500'
         >
-          <h2 className='dark:text-white font'>BaraDev</h2>
+          <h2 className='dark:text-white dark:hover:text-eden-200 transition-colors duration-300 font'>
+            BaraDev
+          </h2>
         </a>
 
         <button

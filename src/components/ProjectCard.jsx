@@ -9,7 +9,7 @@ const ProjectCard = ({ project, order }) => {
       id='projects'
       className={`bg-slate-50 border  border-gray-300  rounded-lg p-3  lg:h-[27rem] h-auto mx-auto flex  lg:flex-row flex-col w-full lg:gap-7 gap-3 dark:bg-gray-800 dark:border-gray-700 ${
         order === 1 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-      } shadow-md shadow-eden-300`}
+      } shadow-sm shadow-eden-300`}
     >
       <div className='lg:h-96 sm:h-[340px] h-[250px] lg:w-3/5 overflow-hidden dark:border-slate-700 border-gray-300 rounded-md border lg:my-auto shadow-md  '>
         <a href={project.demoPage} className='h-full '>
@@ -29,7 +29,7 @@ const ProjectCard = ({ project, order }) => {
           {project.techs.map((tech) => (
             <span
               key={tech}
-              className='p-1 px-2 dark:bg-gray-700 rounded-md shadow-md '
+              className='p-1 px-2 bg-gray-100 dark:bg-gray-700 rounded-md shadow-md '
             >
               {tech}
             </span>
@@ -39,7 +39,7 @@ const ProjectCard = ({ project, order }) => {
           <a
             target='_blank'
             href={project.githubCode}
-            className='flex text-xl items-end gap-2 hover:text-eden-500'
+            className='flex text-xl items-end gap-2 hover:text-eden-600 dark:hover:text-eden-500 '
             rel='noreferrer'
             aria-label={`GitHub code of ${project.name} project`}
           >
@@ -48,7 +48,7 @@ const ProjectCard = ({ project, order }) => {
           <a
             target='_blank'
             href={project.demoPage}
-            className='flex text-xl items-end gap-2 hover:text-eden-500'
+            className='flex text-xl items-end gap-2 hover:text-eden-600 dark:hover:text-eden-500'
             rel='noreferrer'
             aria-label={`Live page of ${project.name} project`}
           >

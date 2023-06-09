@@ -9,7 +9,7 @@ import GitHub from '../icons/GitHub'
 import BlobImage from '../icons/BlobImage'
 import { Tooltip } from '@mui/material'
 
-import resume from '../../public/CV_Juan_Martín_Baranovsky.pdf'
+import resume from '../assets/CV_Juan_Martín_Baranovsky.pdf'
 
 const Hero = ({ isDarkMode }) => {
   return (

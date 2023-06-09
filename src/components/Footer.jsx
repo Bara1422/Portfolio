@@ -4,11 +4,11 @@ import LinkedIn from '../icons/LinkedIn'
 
 const Footer = () => {
   return (
-    <footer className='flex h-16 mt-16 md:gap-0 gap-2 flex-col md:flex-row justify-evenly items-center border-t border-slate-400'>
-      <h3 className='font-bold order-2 md:order-1'>
+    <footer className='mt-16 flex h-16 flex-col items-center justify-evenly gap-2 border-t border-slate-400 md:flex-row md:gap-0'>
+      <h3 className='order-2 font-bold md:order-1'>
         Juan Martín Baranovsky Dev
       </h3>
-      <div className='flex gap-3 order-1 md:order-2'>
+      <div className='order-1 flex gap-3 md:order-2'>
         <a
           href='https://github.com/Bara1422'
           target='_blank'

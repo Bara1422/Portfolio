@@ -3,7 +3,7 @@ import React from 'react'
 const GitHub = ({ scale }) => {
   return (
     <svg
-      className={`bg-white text-white rounded-full border-white border ${scale} `}
+      className={`rounded-full border border-white bg-white text-white ${scale} `}
       height='32'
       aria-hidden='true'
       viewBox='0 0 16 16'

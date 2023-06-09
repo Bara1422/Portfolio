@@ -60,13 +60,13 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
   }
 
   return (
-    <nav className='  dark:bg-[rgb(17,24,40)] bg-slate-200 sticky top-0 left-0 right-0 opacity-100 border-b border-slate-400'>
-      <div className=' max-w-screen-xl flex flex-wrap items-end justify-between mx-auto px-3 pt-6 pb-3'>
+    <nav className='  sticky left-0 right-0 top-0 border-b border-slate-400 bg-slate-200 opacity-100 dark:bg-[rgb(17,24,40)]'>
+      <div className=' mx-auto flex max-w-screen-xl flex-wrap items-end justify-between px-3 pb-3 pt-6'>
         <a
           onClick={() => scrollToComponent('home')}
-          className='self-center md:pl-4 text-3xl font-semibold whitespace-nowrap cursor-pointer hover:text-eden-500'
+          className='cursor-pointer self-center whitespace-nowrap text-3xl font-semibold hover:text-eden-500 md:pl-4'
         >
-          <h2 className='dark:text-white dark:hover:text-eden-200 transition-colors duration-300 font'>
+          <h2 className='font transition-colors duration-300 dark:text-white dark:hover:text-eden-200'>
             BaraDev
           </h2>
         </a>
@@ -74,7 +74,7 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
         <button
           data-collapse-toggle='navbar-default'
           type='button'
-          className='inline-flex items-end p-2 md:mr-4 ml-3 text-sm z-[60] text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+          className='z-[60] ml-3 inline-flex items-end rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:mr-4 md:hidden'
           aria-controls='navbar-default'
           aria-expanded='false'
           onClick={() => setIsOpen(!isOpen)}
@@ -85,12 +85,12 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
 
         {isOpen && (
           <div
-            className='fixed top-0 left-0 z-50 w-full h-full bg-gray-900 opacity-50'
+            className='fixed left-0 top-0 z-50 h-full w-full bg-gray-900 opacity-50'
             onClick={() => setIsOpen(false)}
           />
         )}
         <div
-          className={`w-full md:block  md:w-auto md:max-h-fit overflow-hidden md:overflow-visible px-4 z-[60] ${
+          className={`z-[60] w-full  overflow-hidden px-4 md:block md:max-h-fit md:w-auto md:overflow-visible ${
             isOpen ? 'block' : 'hidden'
           } `}
           id='navbar-default'
@@ -99,14 +99,14 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
             className={`${
               isOpen
                 ? 'max-h-fit  opacity-100'
-                : 'max-h-0 -translate-y-[300px] opacity-0 md:opacity-100 md:max-h-fit md:translate-y-0 '
-            } font-semibold flex flex-col md:items-center p-4 md:p-0 mt-4  border md:transition-none transition-all duration-300 border-gray-50 bg-slate-200 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700`}
+                : 'max-h-0 -translate-y-[300px] opacity-0 md:max-h-fit md:translate-y-0 md:opacity-100 '
+            } mt-4 flex flex-col rounded-lg border border-gray-50 bg-slate-200  p-4 font-semibold transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:items-center md:space-x-8 md:border-0  md:p-0 md:transition-none md:dark:bg-gray-900`}
           >
             {menuLinks.map((link) => (
               <li key={link.name}>
                 <a
                   onClick={() => scrollToComponent(link.target)}
-                  className='block py-2 pl-3 pr-4 text-gray-900 text-xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 dark:text-white  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer animation-under '
+                  className='animation-under block cursor-pointer rounded py-2 pl-3 pr-4 text-xl text-gray-900 hover:bg-gray-100  dark:text-white dark:hover:bg-gray-700  dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent '
                   aria-current='page'
                 >
                   {link.name}

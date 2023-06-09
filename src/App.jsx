@@ -11,9 +11,9 @@ function App() {
   const [isDarkMode, handleDarkMode] = useDarkMode()
 
   return (
-    <div className=' dark:bg-[rgb(17,24,40)] dark:text-slate-300 flex-col justify-center min-h-screen min-w-full bg-slate-200 font-overpass 2xl:max-w-xl'>
+    <div className=' min-h-screen min-w-full flex-col justify-center bg-eden-200 font-overpass dark:bg-[rgb(17,24,40)] dark:text-slate-300 2xl:max-w-xl'>
       <div className='container mx-auto'>
-        <header className='flex  flex-col sticky top-0 right-0 left-0'>
+        <header className='sticky  left-0 right-0 top-0 flex flex-col'>
           <Navbar isDarkMode={isDarkMode} handleDarkMode={handleDarkMode} />
         </header>
         <Hero isDarkMode={isDarkMode} />

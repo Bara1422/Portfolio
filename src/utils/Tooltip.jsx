@@ -19,7 +19,7 @@ const Tooltip = ({ children, text }) => {
     >
       {children}
       {visible && (
-        <span className='absolute bg-gray-800 text-white text-sm py-1 px-2 rounded whitespace-nowrap'>
+        <span className='absolute whitespace-nowrap rounded bg-gray-800 px-2 py-1 text-sm text-white'>
           {text}
         </span>
       )}

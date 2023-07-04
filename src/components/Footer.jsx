@@ -4,7 +4,7 @@ import LinkedIn from '../icons/LinkedIn'
 
 const Footer = () => {
   return (
-    <footer className='mt-16 flex h-16 flex-col items-center justify-evenly gap-2 border-t border-slate-400 md:flex-row md:gap-0'>
+    <footer className='mt-20 flex h-20 flex-col items-center justify-evenly gap-2 border-t border-slate-400 md:flex-row md:gap-0'>
       <h3 className='order-2 font-bold md:order-1'>
         Juan Martín Baranovsky Dev
       </h3>

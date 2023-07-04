@@ -60,7 +60,7 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
   }
 
   return (
-    <nav className='  sticky left-0 right-0 top-0 border-b border-slate-400 bg-slate-200 opacity-100 dark:bg-[rgb(17,24,40)]'>
+    <nav className='  sticky left-0 right-0 top-0 border-b border-slate-400 bg-zinc-100 opacity-100 dark:bg-[rgb(17,24,40)]'>
       <div className=' mx-auto flex max-w-screen-xl flex-wrap items-end justify-between px-3 pb-3 pt-6'>
         <a
           onClick={() => scrollToComponent('home')}
@@ -100,7 +100,7 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
               isOpen
                 ? 'max-h-fit  opacity-100'
                 : 'max-h-0 -translate-y-[300px] opacity-0 md:max-h-fit md:translate-y-0 md:opacity-100 '
-            } mt-4 flex flex-col rounded-lg border border-gray-50 bg-slate-200  p-4 font-semibold transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:items-center md:space-x-8 md:border-0  md:p-0 md:transition-none md:dark:bg-gray-900`}
+            } mt-4 flex flex-col rounded-lg border border-gray-50 bg-zinc-100  p-4 font-semibold transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:items-center md:space-x-8 md:border-0  md:p-0 md:transition-none md:dark:bg-gray-900`}
           >
             {menuLinks.map((link) => (
               <li key={link.name}>

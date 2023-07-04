@@ -9,12 +9,14 @@ import GitHub from '../icons/GitHub'
 import BlobImage from '../icons/BlobImage'
 import { Tooltip } from '@mui/material'
 
-import resume from '../assets/CV_Juan_Martín_Baranovsky.pdf'
+import resume from '../assets/Baranovsky_Juan_Martin_CV.pdf'
+import TypeScript from '../icons/TypeScript'
+import Nodejs from '../icons/Nodejs'
 
 const Hero = ({ isDarkMode }) => {
   return (
     <main
-      className='flex min-h-screen flex-col-reverse items-center justify-around px-6 pb-6 md:h-screen md:flex-row md:justify-center'
+      className='flex min-h-screen flex-col-reverse items-center justify-end px-6 pb-6 md:h-screen md:flex-row md:justify-center md:pr-0'
       id='home'
     >
       <div className=' flex flex-col gap-6 lg:w-2/5'>
@@ -25,7 +27,7 @@ const Hero = ({ isDarkMode }) => {
           Hi, I'm Juan Martín Baranovsky! An enthusiastic Front-End React
           Developer residing in Bahía Blanca, Argentina.
         </p>
-        <div className='mt-2 flex flex-col items-center justify-center gap-4 md:justify-normal lg:flex-row lg:gap-8'>
+        <div className='mt-2 flex items-center justify-center gap-4 md:flex-col md:items-start lg:flex-row  lg:items-center lg:justify-start lg:gap-8'>
           <div className='mt-2 flex justify-center gap-4'>
             <Tooltip title='Github'>
               <a
@@ -53,16 +55,16 @@ const Hero = ({ isDarkMode }) => {
             download='Juan Martín Baranovsky CV Frontend'
             className='flex justify-center active:translate-y-1 md:justify-start'
           >
-            <button className='mt-4 flex items-end rounded-lg border-2 border-transparent px-5 py-2 text-2xl font-bold shadow-md transition-all duration-300 hover:border-slate-400 '>
+            <button className='mt-4 flex rounded-lg border-2 border-zinc-400 px-5 py-2 text-end text-2xl font-bold shadow-md transition-all duration-300 hover:border-zinc-700 dark:border-slate-800 dark:hover:border-slate-400 '>
               DOWNLOAD CV
             </button>
           </a>
         </div>
 
-        <div className=' mt-2 flex flex-col items-center justify-center gap-1 divide-y-2 divide-gray-500 dark:divide-white md:flex-row md:justify-normal md:gap-3 md:divide-x-2 md:divide-y-0'>
-          <h2 className='text-xl font-bold lg:text-2xl'>Tech Skills</h2>
+        <div className=' mt-2 flex flex-col items-center justify-center gap-1 divide-y-2 divide-gray-500 dark:divide-white lg:flex-row lg:justify-normal lg:gap-3 lg:divide-x-2 lg:divide-y-0'>
+          <h2 className='text-xl font-bold  lg:text-2xl'>Tech Skills</h2>
 
-          <div className='flex items-center gap-3 pt-1 md:pl-3 md:pt-0'>
+          <div className='flex items-center gap-3 pt-1 lg:pl-4  lg:pt-0'>
             <Tooltip title='HTML5'>
               <span role='img' aria-label='HTML5 Icon'>
                 <HtmlIcon />
@@ -78,6 +80,11 @@ const Hero = ({ isDarkMode }) => {
                 <JsIcon />
               </span>
             </Tooltip>
+            <Tooltip title='TypeScript'>
+              <span role='img' aria-label='TypeScript Icon' id='about-anchor'>
+                <TypeScript />
+              </span>
+            </Tooltip>
             <Tooltip title='React'>
               <span role='img' aria-label='React Icon'>
                 <ReactIcon isDarkMode={isDarkMode} />
@@ -86,6 +93,11 @@ const Hero = ({ isDarkMode }) => {
             <Tooltip title='Tailwind'>
               <span role='img' aria-label='Tailwind Icon' id='about-anchor'>
                 <Tailwind />
+              </span>
+            </Tooltip>
+            <Tooltip title='Node.js'>
+              <span role='img' aria-label='Node Icon' id='about-anchor'>
+                <Nodejs />
               </span>
             </Tooltip>
           </div>

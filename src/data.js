@@ -31,7 +31,7 @@ export const PROJECTS = [
     description:
       "E-commerce integrated with Backend made in Node+Express, with the Mercado Pago API. The FrontEnd incorportes modern features such as Redux, React-Query, and more. Initially this project was Nucba's final work and was done with React so I decided to migrate it to NextJs 13 with app directory and learn Next along the way. ",
     image: '/Todo-Gaming-Next.webp',
-    techs: ['React-Query', 'Redux', 'Next'],
+    techs: ['React-Query', 'Redux', 'Next.js'],
     githubCode: 'https://github.com/Bara1422/Todo-Gaming-next',
     demoPage: 'https://todo-gaming-next.vercel.app/'
   }

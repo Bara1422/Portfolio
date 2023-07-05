@@ -1,5 +1,14 @@
 export const PROJECTS = [
   {
+    name: 'Todo-Gaming',
+    description:
+      "E-commerce integrated with Backend made in Node+Express, with the Mercado Pago API. The FrontEnd incorportes modern features such as Redux, React-Query, and more. Initially this project was Nucba's final work and was done with React so I decided to migrate it to NextJs 13 with app directory and learn Next along the way. ",
+    image: '/Todo-Gaming-Next.webp',
+    techs: ['React-Query', 'Redux', 'Next.js'],
+    githubCode: 'https://github.com/Bara1422/Todo-Gaming-next',
+    demoPage: 'https://todo-gaming-next.vercel.app/'
+  },
+  {
     name: 'Freectionary',
     description:
       'An English dictionary app that uses a https://dictionaryapi.dev API to provide accurate definitions and pronunciations of words.',
@@ -25,14 +34,5 @@ export const PROJECTS = [
     techs: ['React', 'Tailwind'],
     githubCode: 'https://github.com/Bara1422/WeatherApp',
     demoPage: 'https://weather-app-bara1422.vercel.app/'
-  },
-  {
-    name: 'Todo-Gaming',
-    description:
-      "E-commerce integrated with Backend made in Node+Express, with the Mercado Pago API. The FrontEnd incorportes modern features such as Redux, React-Query, and more. Initially this project was Nucba's final work and was done with React so I decided to migrate it to NextJs 13 with app directory and learn Next along the way. ",
-    image: '/Todo-Gaming-Next.webp',
-    techs: ['React-Query', 'Redux', 'Next.js'],
-    githubCode: 'https://github.com/Bara1422/Todo-Gaming-next',
-    demoPage: 'https://todo-gaming-next.vercel.app/'
   }
 ]

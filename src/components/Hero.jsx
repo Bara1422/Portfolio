@@ -16,10 +16,10 @@ import Nodejs from '../icons/Nodejs'
 const Hero = ({ isDarkMode }) => {
   return (
     <main
-      className='flex min-h-screen flex-col-reverse items-center justify-end px-6 pb-6 md:h-screen md:flex-row md:justify-center md:pr-0'
+      className='mx-auto flex min-h-screen max-w-7xl flex-col-reverse items-center justify-end px-6 pb-6 md:h-screen md:flex-row md:justify-between md:pr-0'
       id='home'
     >
-      <div className=' flex flex-col gap-6 lg:w-2/5'>
+      <div className='flex flex-col gap-6 lg:w-2/5'>
         <h1 className='text-5xl font-bold text-eden-800 dark:text-eden-300 dark:outline-none lg:text-6xl '>
           Front-End React Developer.
         </h1>
@@ -27,7 +27,7 @@ const Hero = ({ isDarkMode }) => {
           Hi, I'm Juan Martín Baranovsky! An enthusiastic Front-End React
           Developer residing in Bahía Blanca, Argentina.
         </p>
-        <div className='mt-2 flex items-center justify-center gap-4 md:flex-col md:items-start lg:flex-row  lg:items-center lg:justify-start lg:gap-8'>
+        <div className='mt-2 flex items-center justify-center gap-4 md:flex-col md:items-start lg:flex-row lg:items-center lg:justify-start lg:gap-8'>
           <div className='mt-2 flex justify-center gap-4'>
             <Tooltip title='Github'>
               <a
@@ -61,10 +61,10 @@ const Hero = ({ isDarkMode }) => {
           </a>
         </div>
 
-        <div className=' mt-2 flex flex-col items-center justify-center gap-1 divide-y-2 divide-gray-500 dark:divide-white lg:flex-row lg:justify-normal lg:gap-3 lg:divide-x-2 lg:divide-y-0'>
-          <h2 className='text-xl font-bold  lg:text-2xl'>Tech Skills</h2>
+        <div className='mt-2 flex flex-col items-center justify-center gap-1 divide-y-2 divide-gray-500 dark:divide-white lg:flex-row lg:justify-normal lg:gap-3 lg:divide-x-2 lg:divide-y-0'>
+          <h2 className='text-xl font-bold lg:text-2xl'>Tech Skills</h2>
 
-          <div className='flex items-center gap-3 pt-1 lg:pl-4  lg:pt-0'>
+          <div className='flex items-center gap-3 pt-1 lg:pl-4 lg:pt-0'>
             <Tooltip title='HTML5'>
               <span role='img' aria-label='HTML5 Icon'>
                 <HtmlIcon />

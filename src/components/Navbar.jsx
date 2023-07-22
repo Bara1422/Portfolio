@@ -61,10 +61,10 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
 
   return (
     <nav className='  sticky left-0 right-0 top-0 border-b border-slate-400 bg-zinc-100 opacity-100 dark:bg-[rgb(17,24,40)]'>
-      <div className=' mx-auto flex max-w-screen-xl flex-wrap items-end justify-between px-3 pb-3 pt-6'>
+      <div className='mx-auto flex max-w-screen-xl flex-wrap items-end justify-between px-3 pb-3 pt-6 '>
         <a
           onClick={() => scrollToComponent('home')}
-          className='cursor-pointer self-center whitespace-nowrap text-3xl font-semibold hover:text-eden-500 md:pl-4'
+          className='cursor-pointer self-center whitespace-nowrap text-3xl font-semibold hover:text-eden-500 md:pl-3'
         >
           <h2 className='font transition-colors duration-300 dark:text-white dark:hover:text-eden-200'>
             BaraDev
@@ -106,7 +106,7 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
               <li key={link.name}>
                 <a
                   onClick={() => scrollToComponent(link.target)}
-                  className='animation-under block cursor-pointer rounded py-2 pl-3 pr-4 text-xl text-gray-900 hover:bg-gray-100  dark:text-white dark:hover:bg-gray-700  dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent '
+                  className='animation-under block cursor-pointer rounded py-2 pl-3 pr-4 text-xl text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent '
                   aria-current='page'
                 >
                   {link.name}

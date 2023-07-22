@@ -34,5 +34,14 @@ export const PROJECTS = [
     techs: ['React', 'Tailwind'],
     githubCode: 'https://github.com/Bara1422/WeatherApp',
     demoPage: 'https://weather-app-bara1422.vercel.app/'
+  },
+  {
+    name: 'Cocktail App',
+    description:
+      'An easy-to-use app that provides weather information for the current day and next two days, as well as hourly data. The background images change according to the weather, making it visually appealing. ',
+    image: '/cocktailapp.webp',
+    techs: ['React', 'Tailwind', 'Next', 'TypeScript', 'Tanstack Query'],
+    githubCode: 'https://github.com/Bara1422/CocktailApp',
+    demoPage: 'https://cocktail-app-bara1422.vercel.app/'
   }
 ]

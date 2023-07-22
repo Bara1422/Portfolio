@@ -24,7 +24,7 @@ const ProjectCard = ({ project, order }) => {
         <h3 className='text-center text-3xl font-bold dark:text-slate-200'>
           {project.name}
         </h3>
-        <p className='max-h-36 overflow-auto text-lg lg:min-h-[200px]'>
+        <p className='max-h-32 overflow-auto text-lg lg:min-h-[200px]'>
           {project.description}
         </p>
         <div className='flex flex-wrap gap-3 text-xl font-semibold'>

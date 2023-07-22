@@ -40,7 +40,7 @@ export const PROJECTS = [
     description:
       'An easy-to-use app that provides weather information for the current day and next two days, as well as hourly data. The background images change according to the weather, making it visually appealing. ',
     image: '/cocktailapp.webp',
-    techs: ['React', 'Tailwind', 'Next', 'TypeScript', 'Tanstack Query'],
+    techs: ['Next', 'Tailwind', 'TypeScript'],
     githubCode: 'https://github.com/Bara1422/CocktailApp',
     demoPage: 'https://cocktail-app-bara1422.vercel.app/'
   }

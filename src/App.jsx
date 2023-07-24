@@ -1,5 +1,5 @@
 import './App.css'
-import AboutMe from './components/AboutMe'
+/* import AboutMe from './components/AboutMe' */
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
@@ -13,11 +13,11 @@ function App() {
   return (
     <div className=' min-h-screen min-w-full flex-col justify-center bg-zinc-100 font-overpass dark:bg-[rgb(17,24,40)] dark:text-slate-300 2xl:max-w-xl'>
       <div className='container mx-auto'>
-        <header className='sticky  left-0 right-0 top-0 flex flex-col'>
+        <header className='sticky left-0 right-0 top-0 flex flex-col'>
           <Navbar isDarkMode={isDarkMode} handleDarkMode={handleDarkMode} />
         </header>
         <Hero isDarkMode={isDarkMode} />
-        <AboutMe />
+        {/* <AboutMe /> */}
         <Projects />
         <Contact />
         <Footer />

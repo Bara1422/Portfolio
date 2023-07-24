@@ -9,6 +9,15 @@ export const PROJECTS = [
     demoPage: 'https://todo-gaming-next.vercel.app/'
   },
   {
+    name: 'Cocktail App',
+    description:
+      'Simple cocktail app where you can search cocktail by name and you will get all its ingredients and how to prepare it. You can also search by ingredient and see all the cocktails that are made with that ingredient. ',
+    image: '/cocktailapp.webp',
+    techs: ['Next.js', 'Tailwind', 'TypeScript'],
+    githubCode: 'https://github.com/Bara1422/CocktailApp',
+    demoPage: 'https://cocktail-app-bara1422.vercel.app/'
+  },
+  {
     name: 'Freectionary',
     description:
       'An English dictionary app that uses a https://dictionaryapi.dev API to provide accurate definitions and pronunciations of words.',
@@ -34,14 +43,5 @@ export const PROJECTS = [
     techs: ['React', 'Tailwind'],
     githubCode: 'https://github.com/Bara1422/WeatherApp',
     demoPage: 'https://weather-app-bara1422.vercel.app/'
-  },
-  {
-    name: 'Cocktail App',
-    description:
-      'An easy-to-use app that provides weather information for the current day and next two days, as well as hourly data. The background images change according to the weather, making it visually appealing. ',
-    image: '/cocktailapp.webp',
-    techs: ['Next', 'Tailwind', 'TypeScript'],
-    githubCode: 'https://github.com/Bara1422/CocktailApp',
-    demoPage: 'https://cocktail-app-bara1422.vercel.app/'
   }
 ]

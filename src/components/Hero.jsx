@@ -20,12 +20,16 @@ const Hero = ({ isDarkMode }) => {
       id='home'
     >
       <div className='flex flex-col gap-6 lg:w-2/5'>
-        <h1 className='text-5xl font-bold text-eden-800 dark:text-eden-300 dark:outline-none lg:text-6xl '>
-          Front-End React Developer.
+        <h1 className='text-5xl font-bold dark:outline-none lg:text-6xl '>
+          Hi, I'm Juan Baranovsky!{' '}
+          <span className='block text-eden-800 dark:text-eden-300'>
+            Front-End Developer.
+          </span>
         </h1>
         <p className='text-xl font-semibold text-slate-900 dark:text-slate-200'>
-          Hi, I'm Juan Martín Baranovsky! An enthusiastic Front-End React
-          Developer residing in Bahía Blanca, Argentina.
+          I'm always trying to learn cutting-edge technologies and looking
+          forward to working with a team to accomplish new goals. Residing in
+          Bahía Blanca, Argentina.
         </p>
         <div className='mt-2 flex items-center justify-center gap-4 md:flex-col md:items-start lg:flex-row lg:items-center lg:justify-start lg:gap-8'>
           <div className='mt-2 flex justify-center gap-4'>
@@ -55,7 +59,7 @@ const Hero = ({ isDarkMode }) => {
             download='Juan Martín Baranovsky CV Frontend'
             className='flex justify-center active:translate-y-1 md:justify-start'
           >
-            <button className='mt-4 flex rounded-lg border-2 border-zinc-400 px-5 py-2 text-end text-2xl font-bold shadow-md transition-all duration-300 hover:border-zinc-700 dark:border-slate-800 dark:hover:border-slate-400 '>
+            <button className='mt-4 flex rounded-lg border-2 border-zinc-400 px-5 py-2 text-2xl font-bold shadow-md transition-all duration-300 hover:border-zinc-600 dark:border-slate-800 dark:hover:border-eden-500 sm:text-end '>
               DOWNLOAD CV
             </button>
           </a>

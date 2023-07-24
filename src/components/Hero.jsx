@@ -1,22 +1,15 @@
 import React from 'react'
-import HtmlIcon from '../icons/HtmlIcon'
-import CssIcon from '../icons/CssIcon'
-import JsIcon from '../icons/JsIcon'
-import ReactIcon from '../icons/ReactIcon'
-import Tailwind from '../icons/Tailwind'
 import LinkedIn from '../icons/LinkedIn'
 import GitHub from '../icons/GitHub'
 import BlobImage from '../icons/BlobImage'
 import { Tooltip } from '@mui/material'
-
 import resume from '../assets/Baranovsky_Juan_Martin_CV.pdf'
-import TypeScript from '../icons/TypeScript'
-import Nodejs from '../icons/Nodejs'
+import TechIcons from './TechIcons'
 
 const Hero = ({ isDarkMode }) => {
   return (
     <main
-      className='mx-auto flex min-h-screen max-w-7xl flex-col-reverse items-center justify-end px-6 pb-6 md:h-screen md:flex-row md:justify-between md:pr-0'
+      className='mx-auto flex min-h-screen max-w-7xl flex-col-reverse items-center justify-end px-8 pb-6 md:h-screen md:flex-row md:justify-between md:pr-0'
       id='home'
     >
       <div className='flex flex-col gap-6 lg:w-2/5'>
@@ -67,44 +60,7 @@ const Hero = ({ isDarkMode }) => {
 
         <div className='mt-2 flex flex-col items-center justify-center gap-1 divide-y-2 divide-gray-500 dark:divide-white lg:flex-row lg:justify-normal lg:gap-3 lg:divide-x-2 lg:divide-y-0'>
           <h2 className='text-xl font-bold lg:text-2xl'>Tech Skills</h2>
-
-          <div className='flex items-center gap-3 pt-1 lg:pl-4 lg:pt-0'>
-            <Tooltip title='HTML5'>
-              <span role='img' aria-label='HTML5 Icon'>
-                <HtmlIcon />
-              </span>
-            </Tooltip>
-            <Tooltip title='CSS3'>
-              <span role='img' aria-label='CSS3 Icon'>
-                <CssIcon />
-              </span>
-            </Tooltip>
-            <Tooltip title='JavaScript'>
-              <span role='img' aria-label='JavaScript Icon'>
-                <JsIcon />
-              </span>
-            </Tooltip>
-            <Tooltip title='TypeScript'>
-              <span role='img' aria-label='TypeScript Icon' id='about-anchor'>
-                <TypeScript />
-              </span>
-            </Tooltip>
-            <Tooltip title='React'>
-              <span role='img' aria-label='React Icon'>
-                <ReactIcon isDarkMode={isDarkMode} />
-              </span>
-            </Tooltip>
-            <Tooltip title='Tailwind'>
-              <span role='img' aria-label='Tailwind Icon' id='about-anchor'>
-                <Tailwind />
-              </span>
-            </Tooltip>
-            <Tooltip title='Node.js'>
-              <span role='img' aria-label='Node Icon' id='about-anchor'>
-                <Nodejs />
-              </span>
-            </Tooltip>
-          </div>
+          <TechIcons isDarkMode={isDarkMode} />
         </div>
       </div>
       <div className=' md:mt-[-100px]' id='home-anchor'>

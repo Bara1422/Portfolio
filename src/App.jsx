@@ -3,6 +3,7 @@ import './App.css'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
+
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import useDarkMode from './hooks/useDarkMode'
@@ -17,7 +18,6 @@ function App() {
           <Navbar isDarkMode={isDarkMode} handleDarkMode={handleDarkMode} />
         </header>
         <Hero isDarkMode={isDarkMode} />
-        {/* <AboutMe /> */}
         <Projects />
         <Contact />
         <Footer />

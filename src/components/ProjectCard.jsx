@@ -1,13 +1,24 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import ExternalLink from '../icons/ExternalLink'
 import Github2 from '../icons/Github2'
+import { useInView, motion } from 'framer-motion'
 
 const ProjectCard = ({ project, order }) => {
+  const ref = useRef(null)
+  const inView = useInView(ref, { once: true })
   return (
-    <div
+    <motion.div
+      ref={ref}
+      variants={{
+        hidden: { opacity: 0, x: order === 1 ? -100 : 100 },
+        visible: { opacity: 1, x: 0 }
+      }}
+      initial='hidden'
+      animate={inView ? 'visible' : 'hidden'}
+      transition={{ duration: 0.5 }}
       key={project.name}
       id='projects'
-      className={`mx-auto flex  h-auto  w-full flex-col  gap-3 rounded-lg border border-gray-300  bg-slate-50 p-3 dark:border-gray-700 dark:bg-gray-800 lg:h-[27rem] lg:flex-row lg:gap-7 ${
+      className={` mx-auto  flex h-auto  w-full flex-col  gap-3 rounded-lg border border-gray-300  bg-slate-50 p-3 dark:border-gray-700 dark:bg-gray-800 lg:h-[27rem] lg:flex-row lg:gap-7 ${
         order === 1 ? 'lg:flex-row' : 'lg:flex-row-reverse'
       } shadow-sm shadow-eden-300`}
     >
@@ -58,7 +69,7 @@ const ProjectCard = ({ project, order }) => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

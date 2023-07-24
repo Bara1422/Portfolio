@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard'
 
 const Projects = () => {
   return (
-    <section className='mx-auto mt-24  flex flex-col md:p-5 2xl:max-w-screen-xl'>
+    <section className='mx-auto mt-24 flex flex-col md:p-5 2xl:max-w-screen-xl'>
       <h2
         className='text-center text-5xl font-bold text-eden-800 dark:text-eden-400'
         id='projects-anchor'

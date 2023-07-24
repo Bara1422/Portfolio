@@ -61,7 +61,7 @@ const Navbar = ({ isDarkMode, handleDarkMode }) => {
 
   return (
     <nav className='  sticky left-0 right-0 top-0  bg-zinc-100 opacity-100 dark:bg-[rgb(17,24,40)]'>
-      <div className='mx-auto flex max-w-screen-xl flex-wrap items-end justify-between border-b border-slate-400 px-5 pb-3 pt-6 '>
+      <div className='mx-auto flex max-w-screen-xl flex-wrap items-end justify-between border-b border-slate-400 px-5 pb-3  pt-6'>
         <a
           onClick={() => scrollToComponent('home')}
           className='cursor-pointer self-center whitespace-nowrap text-3xl font-semibold hover:text-eden-500 md:pl-3'

@@ -4,11 +4,11 @@ import Github2 from '../icons/Github2'
 import { useInView, motion } from 'framer-motion'
 
 const ProjectCard = ({ project, order }) => {
-  const ref = useRef(null)
-  const inView = useInView(ref, { once: true })
+  const projectRef = useRef(null)
+  const inView = useInView(projectRef, { once: true })
   return (
     <motion.div
-      ref={ref}
+      ref={projectRef}
       variants={{
         hidden: { opacity: 0, x: order === 1 ? -100 : 100 },
         visible: { opacity: 1, x: 0 }

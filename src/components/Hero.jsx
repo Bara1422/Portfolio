@@ -1,24 +1,71 @@
-import React from 'react'
 import LinkedIn from '../icons/LinkedIn'
 import GitHub from '../icons/GitHub'
 import BlobImage from '../icons/BlobImage'
 import { Tooltip } from '@mui/material'
 import resume from '../assets/Baranovsky_Juan_Martin_CV.pdf'
 import TechIcons from './TechIcons'
+import { motion } from 'framer-motion'
 
 const Hero = ({ isDarkMode }) => {
+  const text = 'Front-End Developer'
+  const words = text.split(' ')
+
+  const container = {
+    hidden: { opacity: 0 },
+    visible: (i = 1) => ({
+      opacity: 1,
+      transition: { staggerChildren: 0.2, delayChildren: 0.04 * i }
+    })
+  }
+
+  const child = {
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: 'spring',
+        damping: 12,
+        stiffness: 100
+      }
+    },
+    hidden: {
+      opacity: 0,
+      x: -20,
+      transition: {
+        type: 'spring',
+        damping: 12,
+        stiffness: 100
+      }
+    }
+  }
+
   return (
     <main
       className='mx-auto flex min-h-screen max-w-7xl flex-col-reverse items-center justify-end px-8 pb-6 md:h-screen md:flex-row md:justify-between md:pr-0'
       id='home'
     >
       <div className='flex flex-col gap-6 lg:w-2/5'>
-        <h1 className='text-5xl font-bold dark:outline-none lg:text-6xl '>
-          Hi, I'm Juan Baranovsky!{' '}
-          <span className='block text-eden-800 dark:text-eden-300'>
-            Front-End Developer.
-          </span>
-        </h1>
+        <div className='flex flex-col overflow-hidden'>
+          <h1 className='text-5xl font-bold dark:outline-none lg:text-6xl '>
+            Hi, I'm Juan Baranovsky!{' '}
+          </h1>
+          <motion.div
+            variants={container}
+            className='flex flex-wrap overflow-hidden'
+            initial='hidden'
+            animate='visible'
+          >
+            {words.map((word, index) => (
+              <motion.span
+                variants={child}
+                key={index}
+                className='mr-1 inline-flex text-4xl font-bold text-eden-800 dark:text-eden-300 lg:text-5xl'
+              >
+                {word}
+              </motion.span>
+            ))}
+          </motion.div>
+        </div>
         <p className='text-xl font-semibold text-slate-900 dark:text-slate-200'>
           I'm always trying to learn cutting-edge technologies and looking
           forward to working with a team to accomplish new goals. Residing in

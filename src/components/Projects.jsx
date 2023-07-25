@@ -11,7 +11,7 @@ const Projects = () => {
       >
         PORTFOLIO
       </h2>
-      <div className='flex h-auto flex-col gap-10 p-3'>
+      <div className='flex h-auto flex-col gap-10 overflow-hidden p-3'>
         {PROJECTS.map((project, index) => (
           <ProjectCard
             key={project.name}

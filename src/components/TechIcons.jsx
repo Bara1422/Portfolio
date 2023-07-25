@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import HtmlIcon from '../icons/HtmlIcon'
 import CssIcon from '../icons/CssIcon'
 import JsIcon from '../icons/JsIcon'
@@ -7,7 +7,7 @@ import ReactIcon from '../icons/ReactIcon'
 import Tailwind from '../icons/Tailwind'
 import Nodejs from '../icons/Nodejs'
 import { Tooltip } from '@mui/material'
-import { motion } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 
 const TechIcons = ({ isDarkMode }) => {
   const iconData = [
@@ -20,13 +20,21 @@ const TechIcons = ({ isDarkMode }) => {
     { icon: Nodejs, tooltip: 'Node', anchorId: null }
   ]
 
+  const ref = useRef(null)
+  const inView = useInView(ref, { once: true })
+
   return (
-    <div className='flex items-center gap-3 pt-1 lg:pl-4 lg:pt-0'>
+    <div className='flex items-center gap-2 pt-1 lg:gap-3 lg:pl-4 lg:pt-0'>
       {iconData.map(({ icon: Icon, tooltip, anchorId, ...rest }, index) => (
         <motion.div
+          ref={ref}
           key={index}
-          initial={{ opacity: 0, translateX: -50 }}
-          animate={{ opacity: 1, translateX: 0 }}
+          variants={{
+            hidden: { opacity: 0, translateX: -50 },
+            visible: { opacity: 1, translateX: 0 }
+          }}
+          initial='hidden'
+          animate={inView ? 'visible' : 'hidden'}
           transition={{ duration: 0.4, delay: index * 0.2 }}
         >
           <Tooltip title={tooltip}>

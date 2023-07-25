@@ -59,7 +59,7 @@ const Hero = ({ isDarkMode }) => {
               <motion.span
                 variants={child}
                 key={index}
-                className='mr-1 inline-flex text-4xl font-bold text-eden-800 dark:text-eden-300 lg:text-5xl'
+                className='mr-1 inline-flex text-4xl font-bold text-[rgb(0,88,118)] dark:text-eden-300 lg:text-5xl'
               >
                 {word}
               </motion.span>

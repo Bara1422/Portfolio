@@ -6,12 +6,12 @@ const Contact = () => {
   return (
     <div className='mt-20 flex-col' id='contact'>
       <h2
-        className='text-center text-4xl font-bold text-eden-800 dark:text-eden-400 '
+        className='text-center text-4xl font-bold text-[rgb(0,88,118)] dark:text-eden-400 '
         id='contact-anchor'
       >
         CONTACT
       </h2>
-      <div className='flex flex-col gap-4 pt-4 md:flex-row md:justify-evenly lg:justify-center  lg:gap-10'>
+      <div className='flex flex-col gap-4 pt-4 md:flex-row md:justify-evenly lg:justify-center lg:gap-10'>
         <div className=' mx-auto flex w-72 flex-col gap-2 rounded-3xl border border-gray-300 bg-white p-4 text-center shadow-sm shadow-eden-400 dark:bg-[rgb(21,30,51)]  md:mx-0'>
           <h3 className='text-xl font-bold'>Location</h3>
           <a
@@ -28,7 +28,7 @@ const Contact = () => {
           <h3 className='text-xl font-bold'>Email</h3>
           <a
             href='mailto:juanbaranovsky@gmail.com'
-            className='flex justify-center gap-2 font-semibold  hover:text-eden-600 dark:hover:text-eden-500'
+            className='flex justify-center gap-2 font-semibold hover:text-eden-600 dark:hover:text-eden-500'
             aria-label='Send e-mail to juanbaranovsky@gmail.com'
           >
             <MailOpen /> juanbaranovsky@gmail.com

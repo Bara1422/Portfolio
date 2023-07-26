@@ -23,10 +23,18 @@ const ProjectCard = ({ project, order }) => {
       } shadow-sm shadow-eden-300`}
     >
       <div className='h-[250px] overflow-hidden rounded-md border border-gray-300 shadow-md dark:border-slate-700 sm:h-[340px] lg:my-auto lg:h-96 lg:w-3/5  '>
-        <a href={project.demoPage} className='h-full '>
+        <a
+          href={project.demoPage}
+          className='h-full'
+          target='_blank'
+          rel='noreferrer'
+        >
           <img
+            loading='lazy'
             src={project.image}
             alt={`Image of ${project.name} project`}
+            width={800}
+            height={400}
             className=' h-full max-h-full w-full object-cover object-top transition-all duration-[6000ms] ease-in-out sm:object-cover lg:hover:object-bottom '
           />
         </a>

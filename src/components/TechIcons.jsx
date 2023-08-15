@@ -6,8 +6,8 @@ import TypeScript from '../icons/TypeScript'
 import ReactIcon from '../icons/ReactIcon'
 import Tailwind from '../icons/Tailwind'
 import Nodejs from '../icons/Nodejs'
-import { Tooltip } from '@mui/material'
 import { motion, useInView } from 'framer-motion'
+import { Tooltip } from '@mui/material'
 
 const TechIcons = ({ isDarkMode }) => {
   const iconData = [

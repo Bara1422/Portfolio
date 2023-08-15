@@ -97,7 +97,7 @@ const Hero = ({ isDarkMode }) => {
           <a
             href={resume}
             download='Juan Martín Baranovsky CV Frontend'
-            className='mt-4 flex items-center justify-center rounded-lg border-2 border-zinc-400 px-5 py-2 text-2xl font-bold shadow-md transition-all duration-300 hover:border-zinc-600 dark:border-slate-800 dark:hover:border-eden-500 sm:text-end md:justify-start '
+            className='mt-4 flex items-center justify-center rounded-lg border-2 border-zinc-400 px-4 py-2 text-2xl font-bold shadow-md transition-all duration-300 hover:border-zinc-600 dark:border-slate-800 dark:hover:border-eden-500 sm:text-end md:justify-start '
           >
             DOWNLOAD CV
           </a>

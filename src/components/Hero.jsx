@@ -2,7 +2,7 @@ import LinkedIn from '../icons/LinkedIn'
 import GitHub from '../icons/GitHub'
 import BlobImage from '../icons/BlobImage'
 import { Tooltip } from '@mui/material'
-import resume from '../assets/Baranovsky_Juan_Martin_CV.pdf'
+import resume from '../assets/CV_Baranovsky_Juan_Martin.pdf'
 import TechIcons from './TechIcons'
 import { motion } from 'framer-motion'
 

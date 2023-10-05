@@ -46,7 +46,7 @@ const Hero = () => {
     >
       <div className='flex flex-col gap-6 lg:w-2/5'>
         <div className='flex flex-col overflow-hidden'>
-          <h1 className='text-5xl font-bold dark:outline-none lg:text-6xl '>
+          <h1 className='text-3xl font-bold dark:outline-none sm:text-4xl md:text-5xl lg:text-6xl '>
             Hi, I'm Juan Baranovsky!{' '}
           </h1>
           <motion.div
@@ -66,7 +66,7 @@ const Hero = () => {
             ))}
           </motion.div>
         </div>
-        <p className='text-xl font-semibold text-slate-900 dark:text-slate-200'>
+        <p className='line text-xl font-semibold text-slate-900 dark:text-slate-200'>
           I'm always trying to learn cutting-edge technologies and looking
           forward to working with a team to accomplish new goals. Residing in
           Bahía Blanca, Argentina.

@@ -39,7 +39,7 @@ const ProjectCard = ({ project, order }) => {
           />
         </a>
       </div>
-      <div className='mx-auto my-auto flex max-w-[400px] flex-col gap-6 p-3 '>
+      <div className='mx-auto my-auto flex flex-col gap-6 p-3 lg:max-w-[400px] '>
         <h3 className='text-center text-3xl font-bold dark:text-slate-200'>
           {project.name}
         </h3>

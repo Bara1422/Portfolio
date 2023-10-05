@@ -11,7 +11,7 @@ const menuLinks = [
 
 const NewNavbar = () => {
   return (
-    <nav className='sticky  left-0 right-0 top-0 z-40 bg-zinc-100 opacity-100 backdrop-blur-lg transition-all dark:bg-[rgb(17,24,40)]'>
+    <nav className='sticky  left-0 right-0 top-0 z-40 w-full bg-zinc-100 opacity-100 backdrop-blur-lg transition-all dark:bg-[rgb(17,24,40)]'>
       <div className='mx-auto flex max-w-screen-xl justify-between border-b border-slate-400 px-5 pb-3 pt-6'>
         <a
           className='z-40 cursor-pointer self-center whitespace-nowrap text-3xl font-semibold hover:text-eden-500 md:pl-3'

@@ -4,11 +4,11 @@ import ProjectCard from './ProjectCard'
 
 const Projects = () => {
   return (
-    <section className='mx-auto mt-24 flex flex-col md:p-5 2xl:max-w-screen-xl'>
-      <h2
-        className='text-center text-5xl font-bold text-[rgb(0,88,118)] dark:text-eden-400'
-        id='projects-anchor'
-      >
+    <section
+      className='mx-auto flex flex-col md:p-5 2xl:max-w-screen-xl'
+      id='projects'
+    >
+      <h2 className=' mt-28 text-center text-5xl font-bold text-[rgb(0,88,118)]  dark:text-eden-400 md:mt-20'>
         PORTFOLIO
       </h2>
       <div className='flex h-auto flex-col gap-10 overflow-hidden p-3'>

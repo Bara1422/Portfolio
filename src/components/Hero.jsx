@@ -6,7 +6,7 @@ import resume from '../assets/CV_Baranovsky_Juan_Martin.pdf'
 import TechIcons from './TechIcons'
 import { motion } from 'framer-motion'
 
-const Hero = ({ isDarkMode }) => {
+const Hero = () => {
   const text = 'Front-End Developer'
   const words = text.split(' ')
 
@@ -105,7 +105,7 @@ const Hero = ({ isDarkMode }) => {
 
         <div className='mt-2 flex flex-col items-center justify-center gap-1 divide-y-2 divide-gray-500 dark:divide-white lg:flex-row lg:justify-normal lg:gap-3 lg:divide-x-2 lg:divide-y-0'>
           <h2 className='text-xl font-bold lg:text-2xl'>Tech Skills</h2>
-          <TechIcons isDarkMode={isDarkMode} />
+          <TechIcons />
         </div>
       </div>
       <div className=' md:mt-[-100px]' id='home-anchor'>

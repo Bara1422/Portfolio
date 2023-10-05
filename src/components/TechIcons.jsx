@@ -9,13 +9,13 @@ import Nodejs from '../icons/Nodejs'
 import { motion, useInView } from 'framer-motion'
 import { Tooltip } from '@mui/material'
 
-const TechIcons = ({ isDarkMode }) => {
+const TechIcons = () => {
   const iconData = [
     { icon: HtmlIcon, tooltip: 'HTML5', anchorId: null },
     { icon: CssIcon, tooltip: 'CSS3', anchorId: null },
     { icon: JsIcon, tooltip: 'JavaScript', anchorId: null },
     { icon: TypeScript, tooltip: 'TypeScript', anchorId: 'about-anchor' },
-    { icon: ReactIcon, tooltip: 'React', anchorId: null, isDarkMode },
+    { icon: ReactIcon, tooltip: 'React', anchorId: null },
     { icon: Tailwind, tooltip: 'Tailwind', anchorId: null },
     { icon: Nodejs, tooltip: 'Node', anchorId: null }
   ]

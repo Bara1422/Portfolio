@@ -35,7 +35,7 @@ const ProjectCard = ({ project, order }) => {
             alt={`Image of ${project.name} project`}
             width={800}
             height={400}
-            className=' duration-[6000ms] h-full max-h-full w-full object-cover object-top transition-all ease-in-out sm:object-cover lg:hover:object-bottom '
+            className='h-full max-h-full w-full object-cover object-top transition-object-position ease-in-out sm:object-cover lg:hover:object-bottom lg:duration-1000'
           />
         </a>
       </div>

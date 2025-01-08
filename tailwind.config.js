@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+import tailwindcssAnimate from 'tailwindcss-animate'
+const config = {
   darkMode: ['class'],
   content: [
     './pages/**/*.{js,jsx}',
@@ -16,6 +17,9 @@ module.exports = {
       }
     },
     extend: {
+      transitionProperty: {
+        'object-position': 'object-position'
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -88,5 +92,7 @@ module.exports = {
       }
     }
   },
-  plugins: [require('tailwindcss-animate')]
+  plugins: [tailwindcssAnimate]
 }
+
+export default config

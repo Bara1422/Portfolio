@@ -41,7 +41,7 @@ const Hero = () => {
 
   return (
     <main
-      className='mx-auto flex min-h-screen max-w-7xl flex-col-reverse items-center justify-end px-8 pb-6 md:h-screen md:flex-row md:justify-between md:pr-0'
+      className='flex flex-col-reverse items-center justify-end min-h-screen px-8 pb-6 mx-auto max-w-7xl md:h-screen md:flex-row md:justify-between md:pr-0'
       id='home'
     >
       <div className='flex flex-col gap-6 lg:w-2/5'>
@@ -66,13 +66,13 @@ const Hero = () => {
             ))}
           </motion.div>
         </div>
-        <p className='line text-xl font-semibold text-slate-900 dark:text-slate-200'>
+        <p className='text-xl font-semibold line text-slate-900 dark:text-slate-200'>
           I'm always trying to learn cutting-edge technologies and looking
           forward to working with a team to accomplish new goals. Residing in
           Bahía Blanca, Argentina.
         </p>
-        <div className='mt-2 flex items-center justify-center gap-4 md:flex-col md:items-start lg:flex-row lg:items-center lg:justify-start lg:gap-8'>
-          <div className='mt-2 flex justify-center gap-4'>
+        <div className='flex items-center justify-center gap-4 mt-2 md:flex-col md:items-center lg:flex-row lg:items-center lg:justify-start lg:gap-8'>
+          <div className='flex justify-center gap-4 '>
             <Tooltip title='Github'>
               <a
                 href='https://github.com/Bara1422'
@@ -97,13 +97,13 @@ const Hero = () => {
           <a
             href={resume}
             download='Juan Martín Baranovsky CV Frontend'
-            className='mt-4 flex justify-center rounded-lg border-2 border-zinc-400 px-4 py-2 text-center text-xl font-bold shadow-md transition-all duration-300 hover:border-zinc-600 dark:border-slate-800 dark:hover:border-eden-500 sm:text-end sm:text-2xl md:justify-start '
+            className='flex justify-center px-4 py-2 text-xl font-bold text-center transition-all duration-300 border-2 rounded-lg shadow-md border-zinc-400 hover:border-zinc-600 dark:border-slate-800 dark:hover:border-eden-500 sm:text-end sm:text-2xl md:justify-start '
           >
             DOWNLOAD CV
           </a>
         </div>
 
-        <div className='mt-2 flex flex-col items-center justify-center gap-1 divide-y-2 divide-gray-500 dark:divide-white lg:flex-row lg:justify-normal lg:gap-3 lg:divide-x-2 lg:divide-y-0'>
+        <div className='flex flex-col items-center justify-center gap-1 mt-2 divide-y-2 divide-gray-500 dark:divide-white lg:flex-row lg:justify-normal lg:gap-3 lg:divide-x-2 lg:divide-y-0'>
           <h2 className='text-xl font-bold lg:text-2xl'>Tech Skills</h2>
           <TechIcons />
         </div>
